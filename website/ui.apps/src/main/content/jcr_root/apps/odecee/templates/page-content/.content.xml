@@ -6,25 +6,16 @@
     allowedPaths="[/content/odecee/.+]"
     ranking="{Long}100">
     <jcr:content
-        jcr:primaryType="cq:PageContent"
-        sling:resourceType="odecee/components/structure/page">
-        <logo
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/logo"/>
-        <title
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/content/title"/>
-        <topnav
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/topnav"/>
-        <par
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/parsys">
-            <text
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="odecee/components/structure/page">
+        <navbar
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="odecee/components/content/text"
-                text="&lt;p>This is a content page&lt;/p>"
-                textIsRich="true"/>
-        </par>
+                sling:resourceType="odecee/components/structure/navbar"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"/>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/structure/footer"/>
     </jcr:content>
 </jcr:root>

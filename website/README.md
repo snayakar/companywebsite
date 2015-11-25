@@ -1,3 +1,55 @@
+
+                                                                 ..
+                    +OO                                        .,77777777777
+       . ..     . . +OO    . .                         ... .   .?777=.777.77:.
+    .ZOOOOO8. .OOOOO$OO .IOOOOOZ  .OOOOOO$  +OOOOOZ   OOOOOO+  .?7..... ......
+    OO$  .OOO OOZ.  8OO 8O?. .OO~.OO=  .OO.,OO  .+OO 7OO  .OO$ .?777.I77.~77:.
+    OO.   ~OO OO.   =OO OOOOOOOO8.OO       OOOOOOOOO.OOOOOOOOO .?77~.77?.777:.
+    OO~. .7OO.OO?   $OO OO:.  . . OO    OO.IOO   ..  8O$    .   ...........7:
+    $OO=.,OO~ 7OOI.,OOO IOO~..OO. OOO,.7OO .OO+..ZOO ,OO,.:OO= .?7=.77I.7777:.
+    ..ZOOOZ.  ..OOOO~OO  .OOOO$.   .OOOO=.  .+OOOO..  .$OOOO    .7777777777I
+                                                                 .         .
+   .,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.
+
+
+Odecee Home Page and global elements
+
+- Header
+    Logo
+    Dynamic links
+    Meganav (More link) - do it static for first version
+    Join Team
+    Contact Us
+- Hero
+    Background HTML5 video
+    Heading text
+    Subtext (optional)
+    Video popup (optional) - separate component
+- Content Section
+    *Heading text
+    *Background image (optional)
+    *Background colour (default white)
+    *Text colour (default black)
+    *Text
+- Column Control (we can borrow the AEM one and optimise with our markup)
+- Content Block
+    Image (optional)
+    Heading text
+    Text
+    Text colour (default black)
+    Colour (default white)
+    Link (optional)
+    Make title link
+    Hide link
+    Content mode (simple or styled)
+- Footer
+    Copyright text
+    Contact Us
+    Address
+    Social buttons
+
+--------------------------
+
 # Sample AEM project template
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.

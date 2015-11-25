@@ -13,16 +13,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */-->
-<div class="page__main" data-sly-use.main="main.js">
-    <header class="page__header">
-        <div class="page__logo" data-sly-resource="logo"></div>
-        <nav class="page__topnav" data-sly-resource="topnav"></nav>
+<div data-sly-use.main="main.js">
+    <header class="header clearfix trns-head" role="banner">
+        <!-- TODO: wrap the navbar to a proper wrapper later -->
+        <sly data-sly-resource="navbar"></sly>
     </header>
 
-    <div class="page__title" data-sly-resource="${'title' @ decorationTagName='div'}"></div>
-    <div class="page__par" data-sly-resource="par"></div>
+    <div class="page__par" data-sly-resource="main"></div>
 
-    <footer class="page__footer">
-        <p class="page__copyright">${"&copy; {0} odecee Site. All rights reserved." @ i18n, format=main.year, context='html'}</p>
+    <footer class="footer" role="contentinfo">
+        <section class="foot" data-sly-resource="footer"></section>
     </footer>
 </div>

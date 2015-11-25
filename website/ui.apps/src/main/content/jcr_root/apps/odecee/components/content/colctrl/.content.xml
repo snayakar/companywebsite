@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Columns"
     sling:resourceSuperType="wcm/foundation/components/parsys/colctrl"
-    componentGroup="Odecee Components"/>
+    componentGroup="Odecee Components v2"/>

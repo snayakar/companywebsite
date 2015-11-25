@@ -1,0 +1,41 @@
+<!--/*
+
+  ADOBE CONFIDENTIAL
+  __________________
+
+   Copyright 2014 Adobe Systems Incorporated
+   All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+
+  Text & Image component
+  Re-uses the existing Text and Image sightly components
+*/-->
+<sly data-sly-use.section="section.js"
+     data-sly-use.emptyRenderer="emptysection.html"
+     data-sly-call="${emptyRenderer.emptySectionTemplate @ section=section}" />
+
+<div class="work_witbh_banner about_home clearfix"
+     style="background:url(${section.imageContent}) no-repeat;image"
+     data-sly-test="${section.textContent}">
+    <div class="goods clearfix">
+        <div class="container clearfix">
+            <div class="text-center box-middle large-8 large-centered column small-12 wow fadeInUp animated" data-wow-duration="0.35s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <a href="http://odecee.com.au/who-we-are/">
+                    <h1>${section.textContent.heading}</h1>
+                </a>
+                ${section.textContent.text}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-sly-test="${section.imageContent}"
+    data-sly-resource="${'image' @ resourceType='wcm/foundation/components/image', wcmmode='disabled'}"></div>

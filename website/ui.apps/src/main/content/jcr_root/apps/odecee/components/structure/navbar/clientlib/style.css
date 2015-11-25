@@ -14,20 +14,14 @@
  *  limitations under the License.
  */
 
-/* Text-Image component */
-.textimage-left {
-    float: left;
-    margin: 0 1em 1em 0;
-}
-.textimage-right {
+.topnav {
     float: right;
-    margin: 0 0 1em 1em;
+    list-style: none;
 }
-.textimage-text {
-    margin: 0 0 -1em;
+.topnav__item {
+    float: left;
+    margin-left: 15px;
 }
-.textimage-text:after {
-    content: "";
-    display: table;
-    clear: both;
+.topnav__item--selected {
+    font-weight: bold;
 }

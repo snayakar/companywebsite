@@ -19,15 +19,40 @@
     .parsys_column {
         margin: 0;
     }
+    /* 2 Columns */
     .cq-colctrl-lt0-c0,
     .cq-colctrl-lt0-c1 {
         float: left;
-        width: 48%;
-    }
-    .cq-colctrl-lt0-c0 {
-        margin-right: 2%;
-    }
-    .cq-colctrl-lt0-c1 {
+        width: 47%;
         margin-left: 2%;
     }
+
+
+    /* 3 Columns */
+    .cq-colctrl-lt1-c0,
+    .cq-colctrl-lt1-c1,
+    .cq-colctrl-lt1-c2 {
+        float: left;
+        width: 30.3333%;
+        margin-left: 2%;
+    }
+
+     /* 4 Columns */
+    .cq-colctrl-lt2-c0,
+    .cq-colctrl-lt2-c1,
+    .cq-colctrl-lt2-c2,
+    .cq-colctrl-lt2-c3 {
+        float: left;
+        width: 22%;
+        margin-left: 2%;
+    }
+
+    /* margen span */
+
+    .cq-colctrl-lt0-c1,
+    .cq-colctrl-lt1-c2,
+    .cq-colctrl-lt2-c3 {
+        margin-right: 2%;
+    }
+
 }
