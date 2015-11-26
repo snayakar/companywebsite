@@ -1,0 +1,48 @@
+
+<sly>
+    <section class="goods feat-cards clearfix">
+        <div class="container text-center box-middle row clearfix" >
+            <div  class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                <img src="${item.image.src @ context='uri'}" alt="${item.image.alt}">
+                <h4>${item.heading}</h4>
+                <p>${item.text}</p>
+                <a href="${item.buttonLink @ context='uri'}" class="btn read_more" data-sly-test="${item.buttonLink}">"${item.buttonLabel}"</a>
+            </div>
+        </div>
+    </section>
+</sly>
+<sly data-sly-test="${block.style == '2'}">
+    <section class="work_home clearfix">
+        <span class="down-cap"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/down-p.png" alt=""></span>
+        <div class="case_sect clearfix" data-sly-list.item="${block.items}">
+           <div class="column large-4 small-12">
+                <a href="${item.buttonLink @ context='uri'}" style="background-image:url('${item.image.src @ context='uri'}')">
+                    <div class="w_oly wbx-1"></div>
+                    <div class="w_content">
+                        <h5>${item.heading}</h5>
+                        <p>${item.text}</p>
+                     <span>
+                         <img src="http://odecee.com.au/wp-content/themes/odecee/library/images/w_more.png" alt="">
+                     </span>
+                    </div>
+                    <div class="home-work-mob-title">
+                        <h5>${item.heading}</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</sly>
+<sly data-sly-test="${block.style == '3'}">
+    <section class="about_home clearfix">
+      <div class="row" data-sly-list.item="${block.items}">
+            <div class="column large-4 small-12 wow fadeInUp standard-col animated" data-wow-duration="0.35s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <a href="${item.buttonLink @ context='uri'}">
+                    <img src="${item.image.src @ context='uri'}">
+                    <h5>${item.heading}</h5>
+                </a>
+                <p>${item.text}</p>
+            </div>
+        </div>
+    </section>
+</sly>

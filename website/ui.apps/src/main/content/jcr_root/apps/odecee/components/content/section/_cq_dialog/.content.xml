@@ -14,7 +14,7 @@
                     jcr:title="Text"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/foundation/section">
-                <layout
+                <layout 
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
                         margin="{Boolean}false"/>
@@ -175,12 +175,48 @@
                             <color
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/colorpicker"
-                                    fieldLabel="Background Color"
+                                    fieldLabel="Color"
                                     name="./backgroundColor"/>
+                           <arrowIcon
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Display Down arrow?"
+                                    value="true"
+                                    name="./arrowIcon"/>
                         </items>
                     </column>
                 </items>
             </background>
+            <button
+                    jcr:title="Button"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                        margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Label"
+                                    name="./label"/> 
+                            <link
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    name="./link"
+                                   fieldLabel="Link to"
+                                    rootPath="/content/odecee"/>
+                        </items>
+                    </column>
+                </items>
+            </button>
         </items>
     </content>
 </jcr:root>
+
+

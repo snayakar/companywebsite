@@ -1,0 +1,11 @@
+<sly data-sly-use.section="../section.js"/>
+<section class="goods feat-cards clearfix">
+    <div class="container text-center box-middle row clearfix" >
+        <div  class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <img src="${section.imageContent.src @ context='uri'}" alt="${section.imageContent.alt}">
+            <h4>${section.textContent.heading}</h4>
+            <p>${section.textContent.text}</p>
+            <a href="${section.buttonLink @ context='uri'}" class="btn read_more" data-sly-test="${section.buttonLink}">"${section.buttonLabel}"</a>
+        </div>
+    </div>
+</section>
