@@ -2,10 +2,12 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2015-11-27T15:24:48.682+11:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
-        pageTitle="New Project"
-        sling:resourceType="odecee/components/structure/page">
+        sling:resourceType="odecee/components/structure/page"
+        pageTitle="New Project">
         <navbar
             jcr:primaryType="nt:unstructured"
             sling:resourceType="odecee/components/structure/navbar"/>
@@ -13,11 +15,329 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <hero
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="odecee/components/content/hero"/>
+                jcr:lastModified="{Date}2015-11-27T15:24:41.772+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/hero"
+                heading="Innovation for the enterprise"
+                text="We are the experts in enterprise applications. We dream up innovative digital solutions and optimise their delivery for better user experience and faster time-to-market."/>
             <section
+                jcr:lastModified="{Date}2015-11-27T14:05:45.017+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="What’s new at Odecee">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T14:05:45.017+11:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="odecee/components/content/section"/>
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section>
+            <block
+                jcr:created="{Date}2015-11-27T14:06:48.058+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:10:03.229+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/block"
+                style="1">
+                <section1
+                    jcr:lastModified="{Date}2015-11-27T14:12:33.661+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="Our latest innovations from Sprout"
+                    label="READ MORE"
+                    link="#"
+                    text="We actively support our people in the development of great new ideas - with real-world outcomes - through our innovation event, Sprout. Have a look at the latest ideas from the minds of our experts.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:12:33.661+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/sprout-homepage-288x196.jpg"
+                        height="0"
+                        width="0"/>
+                </section1>
+                <section2
+                    jcr:lastModified="{Date}2015-11-27T14:12:44.430+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="We're one of the best places to work in Australia!"
+                    label="READ MORE"
+                    link="#"
+                    text="Odecee has been named 22nd on the BRW top 50 ‘Best Places to Work’ list for 2015! Congratulations to the Odecee team - we’ll continue to strive together to become an even greater place to work in 2016!">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:12:44.430+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/odeceeteam2-325x1961-288x196.jpg"
+                        height="0"
+                        width="0"/>
+                </section2>
+                <section3
+                    jcr:lastModified="{Date}2015-11-27T14:12:56.308+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="HOT OPPORTUNITY - Be ‘od’ and join us!"
+                    label="READ MORE"
+                    link="#"
+                    text="SENIOR SOFTWARE ENGINEER Full Stack (J2EE+Front End) - Melbourne - Consult and act as subject matter expert in the development of market-leading Enterprise Web Applications for Tier 1 &amp; 2 clients.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:12:56.308+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/job-opportunity3-288x196.jpg"
+                        height="0"
+                        width="0"/>
+                </section3>
+            </block>
+            <section_501344690
+                jcr:created="{Date}2015-11-27T14:13:17.460+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:13:48.771+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="What we do"
+                text="We empower enterprises to harness technology and forge ahead with certainty. As a trusted partner to our clients, we can help create a complete vision and do the work required to realise it. Leading a mission from start-to-finish or helping build it along the way, our deep expertise gives us the agility to shape digital solutions that match business objectives.">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T14:13:48.771+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section_501344690>
+            <process
+                jcr:created="{Date}2015-11-27T14:14:09.859+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:14:09.859+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/process"/>
+            <section_861646900
+                jcr:created="{Date}2015-11-27T14:14:30.728+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:14:40.551+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="Our work"
+                text="We’ve accomplished more than 300 projects in just seven years. We’re proud to have worked with some of Australia’s largest enterprises, bringing together creative vision and technical expertise to deliver powerful - yet simple - solutions.">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T14:14:40.551+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section_861646900>
+            <block_2079208156
+                jcr:created="{Date}2015-11-27T14:15:40.953+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:15:52.757+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/block"
+                style="2">
+                <section1
+                    jcr:lastModified="{Date}2015-11-27T14:19:19.306+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="ANZ TRANSACTIVE MOBILE APPLICATION"
+                    text="We worked with ANZ to develop a set of mobile/tablet applications that could seamlessly integrate with - and act as an extension of - the ANZ Transactive web-based solution. The applications we delivered offer a fast, simple and convenient mobile banking experience, improving the management of ANZ customers’ cash management activities on the go.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:19:19.306+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/ANZ.png"
+                        height="0"
+                        width="0"/>
+                </section1>
+                <section2
+                    jcr:lastModified="{Date}2015-11-27T14:19:28.424+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="AUSTRALIA POST PARCELSEND APPLICATION"
+                    text="Australia Post needed a simple mobile application - integrated with complex back-end systems - that would showcase innovation to their customers. In close consultation with their team, we developed a top-rated application incorporating PostBill Pay, parcel/postage calculators, location finders and pick-up and delivery services.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:19:28.424+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/AUS-pos.png"
+                        height="0"
+                        width="0"/>
+                </section2>
+                <section3
+                    jcr:lastModified="{Date}2015-11-27T14:19:43.571+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="NBN Co RATIONAL TOOL UPLIFT &amp; MANAGEMENT"
+                    text="Drawing on our wealth of knowledge in the DevOps space, we worked collaboratively with NBNCo to upgrade and migrate a suite of Rational tools that would help optimise their management of the National Broadband Network rollout. Our engagement resulted in significant improvement in NBNCo’s operational efficiency, and we continue to manage and support the Rational tooling stack for them today.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:19:43.571+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/images/NBN-rollout.png"
+                        height="0"
+                        width="0"/>
+                </section3>
+            </block_2079208156>
+            <section_1068083361
+                jcr:created="{Date}2015-11-27T14:20:39.718+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:21:58.260+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="Who we are"
+                text="We are technologists, innovators and trusted experts – the kind of people who get excited about technology and the ways in which it can unlock business potential. Our passion lies in dreaming up and delivering customer-led solutions that allow enterprises to anticipate – not just react to – the technology tidal wave.">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T14:21:58.260+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section_1068083361>
+            <block_1098561008
+                jcr:created="{Date}2015-11-27T14:23:16.520+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:23:20.600+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/block"
+                style="3">
+                <section1
+                    jcr:lastModified="{Date}2015-11-27T14:23:46.607+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="SIMPLE SOLUTIONS"
+                    text="We believe complexity is best tackled with simplicity. We look for and find effective and innovative ways to solve problems simply.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:23:46.607+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/icons/ico-cube.png"
+                        height="0"
+                        width="0"/>
+                </section1>
+                <section2
+                    jcr:lastModified="{Date}2015-11-27T14:24:15.319+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="EXPERT TEAMS"
+                    text="Expertise means more to us than just hiring the brightest and best - we're constantly fine-tuning and expanding our knowledge and skill.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:24:15.319+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/icons/expert-team.png"
+                        height="0"
+                        width="0"/>
+                </section2>
+                <section3
+                    jcr:lastModified="{Date}2015-11-27T14:24:38.422+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/section"
+                    alignment="left"
+                    heading="'WOW' EXPERIENCE"
+                    text="We deliver exceptional experiences by innovating, integrating, asking the right questions and always following through.">
+                    <image
+                        jcr:lastModified="{Date}2015-11-27T14:24:38.422+11:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        fileReference="/content/dam/odecee/icons/gift.png"
+                        height="0"
+                        width="0"/>
+                </section3>
+            </block_1098561008>
+            <section_165297300
+                jcr:created="{Date}2015-11-27T14:34:45.203+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:34:53.706+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T14:34:53.706+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/odecee/images/work_with_us.jpg"
+                    height="0"
+                    width="0"/>
+            </section_165297300>
+            <section_465122984
+                jcr:created="{Date}2015-11-27T15:05:25.100+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T15:05:48.998+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="Work with us - be 'od'"
+                label="Current opportunities to be 'od'"
+                link="#"
+                text="Want to be part of one of Australia's 'Best Places to Work'? Join us and be 'od'. Being ‘od’ means creating, collaborating and contributing. It also means having the freedom to enjoy yourself – and be yourself. If you’re an expert looking to work in a community of experts, join our team…">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T15:05:48.998+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section_465122984>
+            <section_968098959
+                jcr:created="{Date}2015-11-27T15:06:00.598+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T15:06:24.227+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/section"
+                alignment="left"
+                heading="Expert thinking"
+                text="Our business is built on generating ideas and fostering innovative thinking. We're incredibly passionate about exploring where technology could take us and how we might get there – for the benefit of our customers and the wider world. We learn, we think and we share with you. Have a look at our blog for our latest thoughts and news...">
+                <image
+                    jcr:lastModified="{Date}2015-11-27T15:06:24.227+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    height="0"
+                    width="0"/>
+            </section_968098959>
         </main>
         <footer
             jcr:primaryType="nt:unstructured"

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6837c046-ba30-45ca-a4f0-af6b461c3aee">
+    <jcr:content
+        cq:name="sprout-homepage-288x196.jpg"
+        cq:parentPath="/content/dam/odecee/images"
+        jcr:lastModified="{Date}2015-11-27T15:24:07.835+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:ExifOffset="{Long}90"
+            dam:extracted="{Date}2015-11-27T15:24:07.535+11:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}72"
+            dam:Physicalheightininches="{Decimal}2.722222328186035"
+            dam:Physicalwidthindpi="{Long}72"
+            dam:Physicalwidthininches="{Decimal}4.0"
+            dam:Progressive="no"
+            dam:sha1="58983974a779f9eae63396b4bc8186cde62c914b"
+            dam:size="{Long}19626"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2015-11-27T14:31:57.905+11:00"
+            exif:ExifImageLength="{Long}288"
+            exif:ExifImageWidth="{Long}288"
+            exif:PixelXDimension="{Long}72"
+            exif:PixelYDimension="{Long}72"
+            jcr:lastModified="{Date}2015-11-27T15:24:05.712+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}196"
+            tiff:ImageWidth="{Long}288"
+            tiff:Orientation="{Long}1"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="72"
+            tiff:YResolution="72"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

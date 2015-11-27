@@ -25,6 +25,5 @@
         editorType="textimage"/>
     <cq:listeners
             jcr:primaryType="cq:EditListenersConfig"
-            afterinsert="REFRESH_PARENT"
             afteredit="REFRESH_PARENT"/>
 </jcr:root>

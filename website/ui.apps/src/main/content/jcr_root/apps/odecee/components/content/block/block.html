@@ -2,8 +2,45 @@
      data-sly-use.emptyRenderer="emptyblock.html"
      data-sly-call="${emptyRenderer.emptyBlockTemplate @ block=block}" />
 
-<sly data-sly-test="${block.style == '1'}">
-    <sly data-sly-resource="${ @path='section1', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
-    <sly data-sly-resource="${ @path='section2', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
-    <sly data-sly-resource="${ @path='section3', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
-</sly>
+<section data-sly-test="${block.style == '1'}" class="goods feat-cards clearfix">
+    <span class="down-cap" data-sly-test="${section.arrowIcon}"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/down-p.png" alt=""></span>
+    <div class="container text-center box-middle row clearfix" >
+        <div class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <sly data-sly-resource="${ @path='section1', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
+        </div>
+        <div class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <sly data-sly-resource="${ @path='section2', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
+        </div>
+        <div class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <sly data-sly-resource="${ @path='section3', resourceType='odecee/components/content/section', selectors='template.style1' }"/>
+        </div>
+    </div>
+</section>
+<section data-sly-test="${block.style == '2'}" class="work_home clearfix">
+    <span class="down-cap" data-sly-test="${section.arrowIcon}"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/down-p.png" alt=""></span>
+    <div class="case_sect clearfix">
+        <div class="column large-4 small-12">
+            <sly data-sly-resource="${ @path='section1', resourceType='odecee/components/content/section', selectors='template.style2' }"/>
+        </div>
+        <div class="column large-4 small-12">
+            <sly data-sly-resource="${ @path='section2', resourceType='odecee/components/content/section', selectors='template.style2' }"/>
+        </div>
+        <div class="column large-4 small-12">
+            <sly data-sly-resource="${ @path='section3', resourceType='odecee/components/content/section', selectors='template.style2' }"/>
+        </div>
+    </div>
+</section>
+<section data-sly-test="${block.style == '3'}" class="about_home clearfix">
+    <span class="down-cap" data-sly-test="${section.arrowIcon}"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/down-p.png" alt=""></span>
+    <div class="row">
+        <div class="column large-4 small-12 wow fadeInUp standard-col animated" data-wow-duration="0.35s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <sly data-sly-resource="${ @path='section1', resourceType='odecee/components/content/section', selectors='template.style3' }"/>
+        </div>
+        <div class="column large-4 small-12 wow fadeInUp standard-col animated" data-wow-duration="0.35s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <sly data-sly-resource="${ @path='section2', resourceType='odecee/components/content/section', selectors='template.style3' }"/>
+        </div>
+        <div class="column large-4 small-12 wow fadeInUp standard-col animated" data-wow-duration="0.35s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.3s; animation-name: fadeInUp;">
+            <sly data-sly-resource="${ @path='section3', resourceType='odecee/components/content/section', selectors='template.style3' }"/>
+        </div>
+    </div>
+</section>

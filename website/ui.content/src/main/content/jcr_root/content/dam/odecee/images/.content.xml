@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="images">
+        <folderThumbnail/>
+    </jcr:content>
+    <sprout-homepage-288x196.jpg/>
+    <odeceeteam2-325x1961-288x196.jpg/>
+    <asset.jpg/>
+    <job-opportunity3-288x196.jpg/>
+    <AUS-pos.png/>
+    <ANZ.png/>
+    <NBN-rollout.png/>
+    <work_with_us.jpg/>
+</jcr:root>

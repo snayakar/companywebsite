@@ -10574,7 +10574,8 @@ div.cube-holder:hover div.flop-cover {
 
 .work_with {
     width: 100%;
-    height: auto
+    height: auto;
+    min-height: 600px;
 }
 
 .work_grid .w_col {

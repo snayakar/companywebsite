@@ -3,5 +3,16 @@
     jcr:mixinTypes="[mix:lockable,rep:AccessControllable]"
     jcr:primaryType="sling:OrderedFolder">
     <rep:policy/>
-    <__contentFolderName__/>
+    <jcr:content/>
+    <collections/>
+    <catalogs/>
+    <geometrixx-outdoors/>
+    <geometrixx/>
+    <geometrixx-media/>
+    <geometrixx-unlimited/>
+    <geometrixx-gov/>
+    <formsanddocuments/>
+    <home/>
+    <projects/>
+    <odecee/>
 </jcr:root>
