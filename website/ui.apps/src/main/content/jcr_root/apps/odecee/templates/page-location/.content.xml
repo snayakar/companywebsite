@@ -3,7 +3,7 @@
     jcr:description="An Odecee Location Page"
     jcr:primaryType="cq:Template"
     jcr:title="Odecee location page"
-    allowedPaths="[/content/odecee/.+/locations/]"
+    allowedPaths="[/content/odecee/.+/locations]"
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
