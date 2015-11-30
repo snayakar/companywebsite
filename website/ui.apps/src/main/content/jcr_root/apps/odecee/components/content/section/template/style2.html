@@ -1,10 +1,14 @@
-<section class="goods feat-cards clearfix">
-    <div class="container text-center box-middle row clearfix" >
-        <div  class="feat-column wow fadeInLeft animated" data-wow-duration="0.4s" data-wow-delay="0.3s" data-wow-offset="150" style="visibility: visible; animation-duration: 0.4s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-            <img src="${item.image.src @ context='uri'}" alt="${item.image.alt}">
-            <h4>${item.heading}</h4>
-            <p>${item.text}</p>
-            <a href="${item.buttonLink @ context='uri'}" class="btn read_more" data-sly-test="${item.buttonLink}">"${item.buttonLabel}"</a>
-        </div>
+<sly data-sly-use.section="../section.js"/>
+<a href="${section.buttonLink @ context='uri'}" style="background-image:url('${section.imageContent.src @ context='uri'}')">
+    <div class="w_oly wbx-1"></div>
+    <div class="w_content">
+        <h5>${section.textContent.heading}</h5>
+        <p>${section.textContent.text}</p>
+         <span>
+             <img src="http://odecee.com.au/wp-content/themes/odecee/library/images/w_more.png" alt="${section.imageContent.alt}">
+         </span>
     </div>
-</section>
+    <div class="home-work-mob-title">
+        <h5>${section.textContent.heading}</h5>
+    </div>
+</a>

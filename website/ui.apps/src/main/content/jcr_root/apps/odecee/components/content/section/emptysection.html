@@ -18,6 +18,6 @@
   Empty Text&Image edit mode template
 */-->
 <template data-sly-template.emptySectionTemplate="${@ section}">
-    <img data-sly-test="${!section.textContent && section.isTouch}" src="/etc/designs/default/0.gif" data-emptytext="Section Component" class="cq-placeholder file cq-dd-image"/>
-    <img data-sly-test="${!section.textContent && !section.isTouch}" src="/etc/designs/default/0.gif" class="cq-image-placeholder cq-dd-image"/>
+    <img data-sly-test="${!(section.textContent || section.imageContent) && section.isTouch}" src="/etc/designs/default/0.gif" data-emptytext="Section Component" class="cq-placeholder file cq-dd-image"/>
+    <img data-sly-test="${!(section.textContent || section.imageContent) && !section.isTouch}" src="/etc/designs/default/0.gif" class="cq-image-placeholder cq-dd-image"/>
 </template>

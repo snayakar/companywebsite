@@ -4,6 +4,7 @@
     <jcr:content
         cq:designPath="/etc/designs/odecee"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
         jcr:title="odecee"
         sling:redirect="{Boolean}true"
@@ -14,4 +15,7 @@
             <file/>
         </image>
     </jcr:content>
+    <fr/>
+    <ru/>
+    <en/>
 </jcr:root>
