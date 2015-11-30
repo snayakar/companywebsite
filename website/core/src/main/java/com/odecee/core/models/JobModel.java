@@ -13,14 +13,12 @@ import org.apache.sling.models.annotations.Model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.day.cq.wcm.foundation.Image;
+import com.odecee.core.utils.OdeceeConstants;
+import com.odecee.core.utils.OdeceeUtils;
 
 @Model(adaptables=Resource.class)
 public class JobModel {
 	private final Logger logger = LoggerFactory.getLogger(getClass());
-	
-	private static final String LOCATION_RESOURCE_TYPE = "odecee/components/structure/locationpage";
-	private static final String ODECEE_PATH = "odecee";
 	
 	@Inject
     private ResourceResolverFactory resourceResolverFactory;
@@ -41,8 +39,7 @@ public class JobModel {
     	
     	try {
 			resolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
-			
-			findNearestLocation(resolver, resource);
+			locationResource = OdeceeUtils.findNearestLocation(resolver, resource);
 			
 			imageSrc = locationResource.getValueMap().get("image", String.class);
 		} catch (LoginException e) {
@@ -50,22 +47,6 @@ public class JobModel {
 			e.printStackTrace();
 		}
     }
-
-	private void findNearestLocation(ResourceResolver resolver, Resource resource) {
-		if(resource.getParent().getPath().contains(ODECEE_PATH)) {
-			Resource parent = resource.getParent();
-			String parentResourceType = parent.getChild("jcr:content").getValueMap().get("sling:resourceType", String.class);
-			logger.info("Parent resource type: " + parent.getChild("jcr:content").getValueMap().get("sling:resourceType", String.class));
-			if(LOCATION_RESOURCE_TYPE.equals(parentResourceType)) {
-				logger.info("Found location: " + parent);
-				locationResource = parent.getChild("jcr:content");
-			} else {
-				findNearestLocation(resolver, parent);
-			}
-		}
-		
-		logger.error("Failed to find location");
-	}
 	
 	public String getLocation() {
 		String location = (String)locationResource.getValueMap().get("town") + ", " + (String)locationResource.getValueMap().get("country");
