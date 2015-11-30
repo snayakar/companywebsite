@@ -3,7 +3,7 @@
     jcr:description="An Odecee job ad"
     jcr:primaryType="cq:Template"
     jcr:title="Odecee Job page"
-    allowedPaths="[/content/odecee/.+]"
+    allowedPaths="[/content/odecee/.+/locations/.+/jobs/]"
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
