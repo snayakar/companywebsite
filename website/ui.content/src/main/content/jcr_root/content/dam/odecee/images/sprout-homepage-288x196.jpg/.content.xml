@@ -7,13 +7,13 @@
     <jcr:content
         cq:name="sprout-homepage-288x196.jpg"
         cq:parentPath="/content/dam/odecee/images"
-        jcr:lastModified="{Date}2015-11-27T15:24:07.835+11:00"
+        jcr:lastModified="{Date}2015-12-01T10:05:46.978+11:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:ExifOffset="{Long}90"
-            dam:extracted="{Date}2015-11-27T15:24:07.535+11:00"
+            dam:extracted="{Date}2015-12-01T10:05:46.684+11:00"
             dam:Fileformat="JPEG"
             dam:MIMEtype="image/jpeg"
             dam:Numberofimages="{Long}1"
@@ -23,7 +23,7 @@
             dam:Physicalwidthindpi="{Long}72"
             dam:Physicalwidthininches="{Decimal}4.0"
             dam:Progressive="no"
-            dam:sha1="58983974a779f9eae63396b4bc8186cde62c914b"
+            dam:sha1="1c57addca947c7249756054802ec04f4544d1155"
             dam:size="{Long}19626"
             dc:format="image/jpeg"
             dc:modified="{Date}2015-11-27T14:31:57.905+11:00"
@@ -31,7 +31,7 @@
             exif:ExifImageWidth="{Long}288"
             exif:PixelXDimension="{Long}72"
             exif:PixelYDimension="{Long}72"
-            jcr:lastModified="{Date}2015-11-27T15:24:05.712+11:00"
+            jcr:lastModified="{Date}2015-12-01T10:05:32.387+11:00"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
