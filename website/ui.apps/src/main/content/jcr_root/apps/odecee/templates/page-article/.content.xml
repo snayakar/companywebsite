@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="An Odecee blog article"
+    jcr:primaryType="cq:Template"
+    jcr:title="Odecee Article page"
+    allowedPaths="[/content/odecee/.+]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="odecee/components/structure/articlepage">
+        <navbar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/structure/navbar"/>
+        <main
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys"/>
+        <footer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/structure/footer"/>
+    </jcr:content>
+</jcr:root>

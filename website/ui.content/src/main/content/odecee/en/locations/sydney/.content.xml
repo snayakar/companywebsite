@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[[]]"
+        cq:lastModified="{Date}2015-11-30T15:24:15.742+11:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/odecee/templates/page-location"
+        jcr:lastModified="{Date}2015-11-30T15:24:08.981+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sydney"
+        sling:resourceType="odecee/components/structure/locationpage"
+        alignment="left"
+        country="Australia"
+        line1="Level 4, 28 Margaret Street"
+        pageTitle="Sydney"
+        postcode="2000"
+        state="NSW"
+        town="Sydney">
+        <main
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <image
+                jcr:lastModified="{Date}2015-11-30T15:24:15.740+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/odecee/locations/job_sydney_hero.jpg"/>
+        </main>
+        <image
+            jcr:lastModified="{Date}2015-11-30T15:24:08.981+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

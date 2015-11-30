@@ -1,0 +1,336 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<div class="off-canvas-wrap" data-sly-use.main="main.js">
+	<header class="header clearfix trns-head" role="banner">
+		<!-- TODO: wrap the navbar to a proper wrapper later -->
+		<sly data-sly-resource="navbar"></sly>
+	</header>
+	<a class="exit-off-canvas"></a>
+
+	<div class="inner-wrap">
+		<div id="container">
+			<div class="main-wrap">
+				<sly data-sly-use.job="com.odecee.core.models.JobModel"/>
+				<div class="${job.city} clearfix">
+					<section class="job_hero_banner" style="background-image:url('${job.locationImage @ context='uri'}')">
+						<div class="ovly"></div>
+						<div class="banner-text wow fadeInDown animated"
+							data-wow-duration="0.35s" data-wow-delay="0.8s"
+							style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.8s; animation-name: fadeInDown;">
+							<h1 class="page-title">${job.title}</h1>
+							<span class="sub-location">${job.location}</span>
+						</div>
+						<!-- .banner-text -->
+					</section>
+
+
+					<section class="job_details clearfix" id="post-2308">
+						<div class="row clearfix">
+							<div
+								class="job-section large-10 small-12 wow fadeInUp clearfix animated"
+								data-wow-duration="0.35s" data-wow-delay="0.4s"
+								style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: fadeInUp;">
+								<h3>Job Overview</h3>
+
+
+								<p></p>
+								<div data-sly-resource="${ @path='jobOverview', resourceType='/apps/odecee/components/content/text'}"></div>
+								<p></p>
+
+
+
+							</div>
+							<div
+								class="job-section large-10 small-12 wow fadeInUp clearfix animated"
+								data-wow-duration="0.35s" data-wow-delay="0.4s"
+								style="visibility: visible; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: fadeInUp;">
+								<h3>Job Description</h3>
+
+
+								<p></p>
+								<div data-sly-resource="${ @path='jobDescription', resourceType='/apps/odecee/components/content/text'}"></div>
+								<p></p>
+
+
+
+							</div>
+							<div class="job-section large-10 small-12 wow fadeInUp clearfix"
+								data-wow-duration="0.35s" data-wow-delay="0.4s"
+								style="visibility: hidden; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: none;">
+								<h3>Qualifications</h3>
+
+
+								<p></p>
+								<div data-sly-resource="${ @path='qualifications', resourceType='/apps/odecee/components/content/text'}"></div>
+								<p></p>
+
+
+
+							</div>
+						</div>
+					</section>
+
+					<section class="application_form clearfix">
+						<div class="row clearfix">
+							<div class="form-fields large-10 small-12 wow fadeInUp clearfix"
+								data-wow-duration="0.35s" data-wow-delay="0.4s"
+								style="visibility: hidden; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: none;">
+								<div id="ninja_forms_form_2_cont" class="ninja-forms-cont">
+									<div id="ninja_forms_form_2_wrap" class="ninja-forms-form-wrap">
+										<h2 class="ninja-forms-form-title">Apply Now</h2>
+										<div id="ninja_forms_form_2_response_msg" style=""
+											class="ninja-forms-response-msg "></div>
+										<form id="ninja_forms_form_2" enctype="multipart/form-data"
+											method="post" name=""
+											action="http://odecee.com.au/wp-admin/admin-ajax.php?action=ninja_forms_ajax_submit"
+											class="ninja-forms-form">
+
+											<input type="hidden" id="_wpnonce" name="_wpnonce"
+												value="dcf58a0855"><input type="hidden"
+												name="_wp_http_referer"
+												value="/jobs/sydney/lead-devops-engineer/"> <input
+												type="hidden" name="_ninja_forms_display_submit" value="1">
+											<input type="hidden" name="_form_id" id="_form_id" value="2">
+											<div id="ninja_forms_form_2_all_fields_wrap"
+												class="ninja-forms-all-fields-wrap">
+												<div class="field-wrap hidden-wrap label-above"
+													id="ninja_forms_field_16_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_16_type"
+														value="hidden"> <input id="ninja_forms_field_16"
+														name="ninja_forms_field_16" type="hidden"
+														class="ninja-forms-field " value="Lead DevOps Engineer"
+														rel="16">
+													<div id="ninja_forms_field_16_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap hidden-wrap label-above"
+													id="ninja_forms_field_28_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_28_type"
+														value="hidden"> <input id="ninja_forms_field_28"
+														name="ninja_forms_field_28" type="hidden"
+														class="ninja-forms-field " value="SYDNEY, AUSTRALIA"
+														rel="28">
+													<div id="ninja_forms_field_28_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap text-wrap label-inside"
+													id="ninja_forms_field_13_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_13_type"
+														value="text"> <input id="ninja_forms_field_13"
+														data-mask="" data-input-limit=""
+														data-input-limit-type="char"
+														data-input-limit-msg="character(s) left"
+														name="ninja_forms_field_13" type="text" placeholder=""
+														class="ninja-forms-field  ninja-forms-req "
+														value="Full Name *" rel="13"> <input type="hidden"
+														id="ninja_forms_field_13_label_hidden" value="Full Name *">
+													<div id="ninja_forms_field_13_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap text-wrap label-inside"
+													id="ninja_forms_field_14_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_14_type"
+														value="text"> <input id="ninja_forms_field_14"
+														data-mask="" data-input-limit=""
+														data-input-limit-type="char" data-input-limit-msg=""
+														name="ninja_forms_field_14" type="text" placeholder=""
+														class="ninja-forms-field  ninja-forms-req "
+														value="Contact Number *" rel="14"> <input
+														type="hidden" id="ninja_forms_field_14_label_hidden"
+														value="Contact Number *">
+													<div id="ninja_forms_field_14_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap text-wrap label-inside"
+													id="ninja_forms_field_15_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_15_type"
+														value="text"> <input id="ninja_forms_field_15"
+														data-mask="" data-input-limit=""
+														data-input-limit-type="char" data-input-limit-msg=""
+														name="ninja_forms_field_15" type="text" placeholder=""
+														class="ninja-forms-field  ninja-forms-req email "
+														value="Email Address *" rel="15"> <input
+														type="hidden" id="ninja_forms_field_15_label_hidden"
+														value="Email Address *">
+													<div id="ninja_forms_field_15_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap text-wrap label-inside"
+													id="ninja_forms_field_17_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_17_type"
+														value="text"> <input id="ninja_forms_field_17"
+														data-mask="" data-input-limit=""
+														data-input-limit-type="char"
+														data-input-limit-msg="character(s) left"
+														name="ninja_forms_field_17" type="text" placeholder=""
+														class="ninja-forms-field  " value="Linkedin Profile URL"
+														rel="17"> <input type="hidden"
+														id="ninja_forms_field_17_label_hidden"
+														value="Linkedin Profile URL">
+													<div id="ninja_forms_field_17_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<span class="ninja-forms-field  clearfix nf-desc"
+													id="ninja_forms_field_27_div_wrap" style="" rel="27"></span>
+												<div class="field-wrap textarea-wrap label-inside"
+													id="ninja_forms_field_21_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_21_type"
+														value="textarea">
+													<textarea name="ninja_forms_field_21"
+														id="ninja_forms_field_21"
+														class="ninja-forms-field  ninja-forms-req" rel="21"
+														data-input-limit="" data-input-limit-type="char"
+														data-input-limit-msg="character(s) left">Introduce Yourself *</textarea>
+													<input type="hidden" id="ninja_forms_field_21_label_hidden"
+														value="Introduce Yourself *">
+													<div id="ninja_forms_field_21_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div
+													class="field-wrap list-dropdown-wrap label-inside turnintodropdown-wrap"
+													id="ninja_forms_field_22_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_22_type"
+														value="list"> <input type="hidden"
+														id="ninja_forms_field_22_list_type" value="dropdown">
+													<select name="ninja_forms_field_22"
+														id="ninja_forms_field_22"
+														class="ninja-forms-field  ninja-forms-req turnintodropdown"
+														rel="22">
+														<option value="">How did you hear about us? *</option>
+														<option value="Job Board" style="">Job Board</option>
+														<option value="Google" style="">Google</option>
+														<option value="Another website" style="">Another
+															website</option>
+														<option value="Friend" style="">Friend</option>
+														<option value="Other" style="">Other</option>
+														<option value="IBL Student Seminar" style="">IBL
+															Student Seminar</option>
+														<option value="Monash Careers Festival" style="">Monash
+															Careers Festival</option>
+													</select> <input type="hidden"
+														id="ninja_forms_field_22_label_hidden"
+														value="How did you hear about us? *">
+													<div id="ninja_forms_field_22_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div
+													class="field-wrap upload-wrap label-inside custom-file-upload-wrap clearfix-wrap"
+													id="ninja_forms_field_26_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_26_type"
+														value="upload"> <input type="hidden"
+														name="MAX_FILE_SIZE" value="2097152">
+													<div class="file-upload-wrapper">
+														<input type="file" name="ninja_forms_field_26[new][]"
+															id="ninja_forms_field_26"
+															class="custom-file-upload-hidden" maxlength="1" rel="26"
+															tabindex="-1" style="position: absolute; left: -9999px;"><input
+															type="text" class="file-upload-input"
+															placeholder="Select a File" disabled="disabled">
+														<button type="button" class="file-upload-button"
+															tabindex="-1">UPLOAD YOUR CV</button>
+													</div>
+													<input type="hidden" name="ninja_forms_field_26[new][]"
+														value="" rel="26"> <input type="hidden"
+														name="ninja_forms_field_26[]" value="" rel="26"> <input
+														type="hidden" id="ninja_forms_field_26_label_hidden"
+														value="">
+													<div id="ninja_forms_field_26_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap submit-wrap label-above"
+													id="ninja_forms_field_24_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_24_type"
+														value="submit">
+													<div id="nf_submit_2">
+														<input type="submit" name="_ninja_forms_field_24"
+															class="ninja-forms-field " id="ninja_forms_field_24"
+															value="Submit" rel="24">
+													</div>
+													<div id="nf_processing_2" style="display: none;">
+														<input type="submit" name="_ninja_forms_field_24"
+															class="ninja-forms-field " id="ninja_forms_field_24"
+															value="Processing" rel="24" disabled="">
+													</div>
+													<div id="ninja_forms_field_24_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap hidden-wrap label-above"
+													id="ninja_forms_field_30_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_30_type"
+														value="hidden"> <input id="ninja_forms_field_30"
+														name="ninja_forms_field_30" type="hidden"
+														class="ninja-forms-field " value="" rel="30">
+													<div id="ninja_forms_field_30_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+												<div class="field-wrap hidden-wrap label-above"
+													id="ninja_forms_field_31_div_wrap" data-visible="1">
+													<input type="hidden" id="ninja_forms_field_31_type"
+														value="hidden"> <input id="ninja_forms_field_31"
+														name="ninja_forms_field_31" type="hidden"
+														class="ninja-forms-field " value="" rel="31">
+													<div id="ninja_forms_field_31_error" style="display: none;"
+														class="ninja-forms-field-error"></div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+					<section class="related_jobs clearfix">
+						<div class="ovly"></div>
+						<div class="contan_rel row clearfix">
+							<div
+								class="xe_ew text-center large-10 small-12 wow fadeInUp clearfix"
+								data-wow-duration="0.35s" data-wow-delay="0.4s"
+								style="visibility: hidden; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: none;">
+
+								<h2 class="text-center">Other Opportunities in Sydney</h2>
+								<div class="posit-row column large-6 small-10 large-centered">
+									<a
+										href="http://odecee.com.au/jobs/sydney/senior-devops-engineer-2/">
+										<h6 style="text-transform: uppercase;">Senior DevOps
+											Engineer</h6>
+									</a>
+									<p>In this critical role, you’re the WOW factor behind the
+										delivery of awesome solutions for some of Australia’s largest
+										enterprises and most challenging projects.</p>
+								</div>
+								<div class="posit-row column large-6 small-10 large-centered">
+									<a
+										href="http://odecee.com.au/jobs/sydney/senior-lead-mobile-engineer/">
+										<h6 style="text-transform: uppercase;">Senior / Lead
+											Mobile Engineer</h6>
+									</a>
+									<p>Consult and act as subject matter expert in the
+										development of market leading and engaging native mobile
+										applications for Tier 1 and 2 clients.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+				<footer class="footer" role="contentinfo">
+					<section class="foot" data-sly-resource="footer"></section>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
