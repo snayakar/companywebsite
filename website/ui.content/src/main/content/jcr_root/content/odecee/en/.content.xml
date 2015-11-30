@@ -8,10 +8,14 @@
         jcr:title="English"
         sling:resourceType="odecee/components/structure/page"
         pageTitle="New Project">
-        <navbar
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/navbar"/>
-        <main
+        <nav_section
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/iparsys">
+            <navbar
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/structure/navbar"/>
+        </nav_section>
+        <main_section
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <hero
@@ -338,9 +342,20 @@
                     height="0"
                     width="0"/>
             </section_968098959>
-        </main>
-        <footer
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/footer"/>
+        </main_section>
+        <footer_section
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/iparsys">
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    copyright="© Copyright Odecee 2015"
+                    phone="1300 633 233"
+                    termsLink="/content/odecee/en.html"
+                    email="enquiries@odecee.com.au"
+                    twitter="https://twitter.com/Odecee"
+                    facebook="https://www.facebook.com/odeceesocial"
+                    linkedin="https://www.linkedin.com/company/320621?trk=tyah%26trkInfo=tarId%3A1406853179868%2Ctas%3AOdecee%2Cidx%3A2-1-4"
+                    sling:resourceType="odecee/components/structure/footer"/>
+        </footer_section>
     </jcr:content>
 </jcr:root>

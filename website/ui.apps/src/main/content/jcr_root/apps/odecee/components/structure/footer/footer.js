@@ -1,40 +1,53 @@
-/*
- *  Copyright 2015 Adobe Systems Incorporated
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
+use(["/libs/wcm/foundation/components/utils/AuthoringUtils.js"], function (AuthoringUtils) {
 
-// Server-side JavaScript for the topnav logic
-use(function () {
-    var items = [];
-    var root = currentPage.getAbsoluteParent(1);
-    var currentNavPath = currentPage.getAbsoluteParent(2).getPath();
-    var it = root.listChildren(new Packages.com.day.cq.wcm.api.PageFilter());
+    "use strict";
 
-    while (it.hasNext()) {
-        var page = it.next();
+    var footer = {},
+        CONST = {
+            PROP_COPYRIGHT: "copyright",
+            PROP_TERMS_AND_CONDITION: "termsLink",
+            PROP_PHONE: "phone",
+            PROP_EMAIL: "email",
+            PROP_TWITTER_URL: "twitter",
+            PROP_FACEBOOK_URL: "facebook",
+            PROP_LINKEDIN_URL: "linkedin"
+        };
 
-        // No strict comparison, because the types returned from the Java APIs
-        // don't strictly match the JavaScript types
-        var selected = (page.getPath() == currentNavPath);
+    // Copyright Text
+    footer.copyright = granite.resource.properties[CONST.PROP_COPYRIGHT]
+            || currentStyle.get(CONST.PROP_COPYRIGHT, "");
 
-        items.push({
-            page: page,
-            selected : selected
-        });
-    }
+    // Terms and Condition Link
+    footer.termsLink = granite.resource.properties[CONST.PROP_TERMS_AND_CONDITION]
+                || currentStyle.get(CONST.PROP_TERMS_AND_CONDITION, "");
 
-    return {
-        items: items
-    };
+    // Phone Number
+    footer.phone = granite.resource.properties[CONST.PROP_PHONE]
+                || currentStyle.get(CONST.PROP_PHONE, "");
+
+    // Email
+    footer.email = granite.resource.properties[CONST.PROP_EMAIL]
+                || currentStyle.get(CONST.PROP_EMAIL, "");
+
+    // Twitter URL
+    footer.twitter = granite.resource.properties[CONST.PROP_TWITTER_URL]
+                || currentStyle.get(CONST.PROP_TWITTER_URL, "");
+
+    // Facebook URL
+    footer.facebook = granite.resource.properties[CONST.PROP_FACEBOOK_URL]
+                || currentStyle.get(CONST.PROP_FACEBOOK_URL, "");
+
+    // Linkedin URL
+    footer.linkedin = granite.resource.properties[CONST.PROP_LINKEDIN_URL]
+                || currentStyle.get(CONST.PROP_LINKEDIN_URL, "");
+
+    // TODO: change currentStyle to wcm.currentStyle
+    // Adding the constants to the exposed API
+    footer.CONST = CONST;
+
+    footer.isTouch = AuthoringUtils.isTouch;
+
+
+    return footer;
+
 });
