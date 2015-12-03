@@ -37,47 +37,47 @@
                     width="0"/>
             </section>
             <process
-                    jcr:created="{Date}2015-11-27T14:06:48.058+11:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2015-11-27T14:10:03.229+11:00"
+                jcr:created="{Date}2015-11-27T14:06:48.058+11:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-27T14:10:03.229+11:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="odecee/components/content/process">
+                <item1
+                    jcr:lastModified="{Date}2015-12-01T11:39:15.748+11:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="odecee/components/content/process">
-                <item1
-                        jcr:lastModified="{Date}2015-12-01T11:39:15.748+11:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="odecee/components/content/process/processItem"
-                        text="&lt;h3>We think&lt;/h3>&#xa;&lt;p>&lt;i>We live and breathe innovation to define problems and discover opportunities.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Maturity assessments&lt;/li>&#xa;&lt;li>Innovation workshops&lt;/li>&#xa;&lt;li>Structured idea generation&lt;/li>&#xa;&lt;li>Knowledge sharing&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                    sling:resourceType="odecee/components/content/process/processItem"
+                    text="&lt;h3>We think&lt;/h3>&#xa;&lt;p>&lt;i>We live and breathe innovation to define problems and discover opportunities.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Maturity assessments&lt;/li>&#xa;&lt;li>Innovation workshops&lt;/li>&#xa;&lt;li>Structured idea generation&lt;/li>&#xa;&lt;li>Knowledge sharing&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
                 <item2
-                        jcr:lastModified="{Date}2015-12-01T11:39:43.321+11:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="odecee/components/content/process/processItem"
-                        text="&lt;h3>We plan&lt;/h3>&#xa;&lt;p>&lt;i>We combine creativity and practicality to conceptualise the best solution for you.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Customer experience&lt;/li>&#xa;&lt;li>DevOps architecture&lt;/li>&#xa;&lt;li>Cloud architecture&lt;/li>&#xa;&lt;li>Digital architecture&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                    jcr:lastModified="{Date}2015-12-01T11:39:43.321+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/process/processItem"
+                    text="&lt;h3>We plan&lt;/h3>&#xa;&lt;p>&lt;i>We combine creativity and practicality to conceptualise the best solution for you.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Customer experience&lt;/li>&#xa;&lt;li>DevOps architecture&lt;/li>&#xa;&lt;li>Cloud architecture&lt;/li>&#xa;&lt;li>Digital architecture&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
                 <item3
-                        jcr:lastModified="{Date}2015-12-01T11:37:16.600+11:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="odecee/components/content/process/processItem"
-                        text="&lt;h3>We build&lt;/h3>&#xa;&lt;p>&lt;i>We bring technical know-how and agility into play, and we work in well with others.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Software engineering&lt;/li>&#xa;&lt;li>Frameworks expertise&lt;/li>&#xa;&lt;li>Cloud migration&lt;/li>&#xa;&lt;li>DevOps SCM&lt;/li>&#xa;&lt;li>DevOps CI/CD&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                    jcr:lastModified="{Date}2015-12-01T11:37:16.600+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/process/processItem"
+                    text="&lt;h3>We build&lt;/h3>&#xa;&lt;p>&lt;i>We bring technical know-how and agility into play, and we work in well with others.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Software engineering&lt;/li>&#xa;&lt;li>Frameworks expertise&lt;/li>&#xa;&lt;li>Cloud migration&lt;/li>&#xa;&lt;li>DevOps SCM&lt;/li>&#xa;&lt;li>DevOps CI/CD&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
                 <item4
-                        jcr:lastModified="{Date}2015-12-01T11:40:22.484+11:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="odecee/components/content/process/processItem"
-                        text="&lt;h3>We check&lt;/h3>&#xa;&lt;p>&lt;i>We test quickly and comprehensively using automated tools to review each line of code.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Automation testing&lt;/li>&#xa;&lt;li>Unit testing&lt;/li>&#xa;&lt;li>Environment/Infrastructure testing&lt;/li>&#xa;&lt;li>Cloud testing&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                    jcr:lastModified="{Date}2015-12-01T11:40:22.484+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/process/processItem"
+                    text="&lt;h3>We check&lt;/h3>&#xa;&lt;p>&lt;i>We test quickly and comprehensively using automated tools to review each line of code.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Automation testing&lt;/li>&#xa;&lt;li>Unit testing&lt;/li>&#xa;&lt;li>Environment/Infrastructure testing&lt;/li>&#xa;&lt;li>Cloud testing&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
                 <item5
-                        jcr:lastModified="{Date}2015-12-01T11:40:51.264+11:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="odecee/components/content/process/processItem"
-                        text="&lt;h3>We deliver&lt;/h3>&#xa;&lt;p>&lt;i>Our experts use the best technologies to deploy simple solutions that delight.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Cloud or on-premise deployments&lt;/li>&#xa;&lt;li>Deployment automation&lt;/li>&#xa;&lt;li>Infrastructure automation&lt;/li>&#xa;&lt;li>Development support&lt;/li>&#xa;&lt;li>Environment management and monitoring&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                    jcr:lastModified="{Date}2015-12-01T11:40:51.264+11:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="odecee/components/content/process/processItem"
+                    text="&lt;h3>We deliver&lt;/h3>&#xa;&lt;p>&lt;i>Our experts use the best technologies to deploy simple solutions that delight.&lt;/i>&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Cloud or on-premise deployments&lt;/li>&#xa;&lt;li>Deployment automation&lt;/li>&#xa;&lt;li>Infrastructure automation&lt;/li>&#xa;&lt;li>Development support&lt;/li>&#xa;&lt;li>Environment management and monitoring&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
             </process>
             <block
                 jcr:created="{Date}2015-11-27T14:06:48.058+11:00"
@@ -391,4 +391,11 @@
         </footer_section>
     </jcr:content>
     <locations/>
+    <whatwedo/>
+    <ourwork/>
+    <innovation/>
+    <whoweare/>
+    <joinourteam/>
+    <contactus/>
+    <expertthinking/>
 </jcr:root>

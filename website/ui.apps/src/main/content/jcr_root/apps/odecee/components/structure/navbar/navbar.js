@@ -1,22 +1,16 @@
 use(function () {
     var items = [];
-    var root = currentPage.getAbsoluteParent(1);
+    var root = currentPage.getAbsoluteParent(2);
     var currentNavPath = currentPage.getAbsoluteParent(2).getPath();
-
-    var absParent = currentStyle.get("absParent", 2);
-    var filter = new Packages.com.day.cq.wcm.api.PageFilter()
-    var it = new Packages.com.day.cq.wcm.foundation.Navigation(currentPage, absParent, filter, 3).iterator();
+    var it = root.listChildren(new Packages.com.day.cq.wcm.api.PageFilter());
 
     while (it.hasNext()) {
         var page = it.next();
-
-        // No strict comparison, because the types returned from the Java APIs
-        // don't strictly match the JavaScript types
-        var selected = (page.getPath() == currentNavPath);
-
+		console.log(page.getProperties());
         items.push({
             page: page,
-            selected : selected
+            properties : page.getProperties(),
+            url: page.getPath() + '.html'
         });
     }
 

@@ -34,25 +34,32 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
+                                    <hideinnav
+                                            cq:showOnCreate="{Boolean}false"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                            allowBulkEdit="{Boolean}true"
+                                            class="dialog-hide-navigation"
+                                            cq-msm-lockable="hideInNav"
+                                            name="./hideInNav"
+                                            renderReadOnly="{Boolean}true"
+                                            text="Disable Navigation?"
+                                            value="true"/>
                                     <fieldset
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                                        class="foundation-field-edit coral-Well">
+                                        class="foundation-field-edit coral-Well dialog-nav-section">
                                         <items jcr:primaryType="nt:unstructured">
                                             <mainnav
                                                 jcr:primaryType="nt:unstructured"
+                                                class="dialog-main-navigation"
                                                 jcr:title="Main Navigation"
                                                 sling:resourceType="granite/ui/components/foundation/form/fieldset">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <hideinnav
-                                                        cq:showOnCreate="{Boolean}false"
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                                        allowBulkEdit="{Boolean}true"
-                                                        class="dialog-hide-navigation"
-                                                        cq-msm-lockable="hideInNav"
-                                                        name="./hideInNav"
-                                                        renderReadOnly="{Boolean}true"
+                                                        name="./hideInMainNav"
                                                         text="Hide in Main Navigation?"
                                                         value="true"/>
                                                 </items>
@@ -85,7 +92,7 @@
                                                     <box
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                                        name="./box"
+                                                        name="./boxNav"
                                                         renderReadOnly="{Boolean}true"
                                                         text="Navigation should be a box?"
                                                         value="true"/>
@@ -93,7 +100,7 @@
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="granite/ui/components/foundation/form/colorpicker"
                                                         fieldLabel="Pick a color"
-                                                        name="./textColor"/>
+                                                        name="./boxNavColor"/>
                                                 </items>
                                             </boxnav>
                                         </items>

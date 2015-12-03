@@ -17,7 +17,10 @@
         postcode="2000"
         state="NSW"
         town="Sydney">
-        <main
+        <nav_section
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/iparsys"/>
+        <main_section
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <image
@@ -26,10 +29,9 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/odecee/locations/job_sydney_hero.jpg"/>
-        </main>
-        <image
-            jcr:lastModified="{Date}2015-11-30T15:24:08.981+11:00"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"/>
+        </main_section>
+        <footer_section
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/iparsys"/>
     </jcr:content>
 </jcr:root>
