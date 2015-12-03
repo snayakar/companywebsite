@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-12-01T11:40:51.270+11:00"
+        cq:lastModified="{Date}2015-12-01T09:57:04.049+11:00"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
@@ -19,12 +19,8 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <hero
-                jcr:lastModified="{Date}2015-11-27T15:24:41.772+11:00"
-                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="odecee/components/content/hero"
-                heading="Innovation for the enterprise"
-                text="We are the experts in enterprise applications. We dream up innovative digital solutions and optimise their delivery for better user experience and faster time-to-market."/>
+                sling:resourceType="odecee/components/content/hero"/>
             <section
                 jcr:lastModified="{Date}2015-11-27T14:05:45.017+11:00"
                 jcr:lastModifiedBy="admin"
@@ -394,4 +390,5 @@
                 twitter="https://twitter.com/Odecee"/>
         </footer_section>
     </jcr:content>
+    <locations/>
 </jcr:root>

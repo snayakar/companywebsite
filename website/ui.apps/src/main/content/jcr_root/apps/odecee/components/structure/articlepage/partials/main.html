@@ -1,0 +1,91 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<div class="off-canvas-wrap" data-sly-use.main="main.js">
+	<header class="header clearfix trns-head" role="banner">
+		<!-- TODO: wrap the navbar to a proper wrapper later -->
+		<sly data-sly-resource="navbar"></sly>
+	</header>
+	<a class="exit-off-canvas"></a>
+	
+	<div class="inner-wrap">
+		<div id="container">
+			<div class="main-wrap">
+				<section id="artt_container" class="about-odecee artt_container intro-effect-jam3">
+					
+					<header class="artt_header">
+						<sly data-sly-use.article="com.odecee.core.models.ArticleModel"/>
+						<div class="artt_bg-img" style="background-color: ${article.articleColor @ context='styleToken'}">
+							<img src="">
+						</div>
+						<div class="article-title row">
+							<span class="top_meta"> <span class="date">${article.date} </span>
+							</span>
+							<!-- post title -->
+							<h1>${article.title}</h1>
+							<!-- /post title -->
+							<!-- post details -->
+							
+							<span class="author_info"> <span class="author_avatar"><img
+									alt=""
+									src="${article.authorAvatar}"
+									srcset="${article.authorAvatar}"
+									class="avatar avatar-40 photo" height="40" width="40"></span> <!-- post details -->
+								<span class="author">Written by <a
+									href="http://odecee.com.au/author/lfitzpatrick/"
+									title="Posts by ${author.authorName}" rel="author">${article.authorName}</a><span class="bot-line"></span>
+							</span> <!-- /post details -->
+
+							</span>
+							<!-- /post details -->
+						</div>
+
+					</header>
+
+					<article class="artt_content row" id="post-${article.postId}">
+						<div style="opacity: 1;" >
+							<div data-sly-resource="${ @path='content', resourceType='/apps/odecee/components/content/text'}"></div>
+							Tags: 
+							
+							<sly data-sly-list.tag="${article.tags}">
+							<a
+								href="http://odecee.com.au/tag/${tag.name}/" rel="tag">${tag.title}</a>,
+							</sly>
+							<br>
+							<p>
+							Categorised in: 
+							<sly data-sly-list.category="${article.categories}">
+							<a
+								href="http://odecee.com.au/tag/${category.name}/" rel="tag">${category.title}</a>,
+							</sly>
+							</p>
+
+							<p>This post was written by ${article.authorName}</p>
+
+
+						</div>
+					</article>
+
+
+
+
+				</section>
+				<footer class="footer" role="contentinfo">
+					<section class="foot" data-sly-resource="footer"></section>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>

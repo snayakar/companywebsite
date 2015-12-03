@@ -7,7 +7,7 @@
     <jcr:content
         cq:name="job-opportunity3-288x196.jpg"
         cq:parentPath="/content/dam/odecee/images"
-        jcr:lastModified="{Date}2015-11-27T15:24:07.505+11:00"
+        jcr:lastModified="{Date}2015-12-01T10:05:46.963+11:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -16,7 +16,7 @@
             dam:DateTimeDigitized="2015:01:08 11:40:28"
             dam:ExifOffset="{Long}164"
             dam:ExposureCompensation="{Long}0"
-            dam:extracted="{Date}2015-11-27T15:24:06.499+11:00"
+            dam:extracted="{Date}2015-12-01T10:05:46.384+11:00"
             dam:Fileformat="JPEG"
             dam:MIMEtype="image/jpeg"
             dam:Numberofimages="{Long}1"
@@ -26,7 +26,7 @@
             dam:Physicalwidthindpi="{Long}72"
             dam:Physicalwidthininches="{Decimal}4.0"
             dam:Progressive="no"
-            dam:sha1="8d4eab2e7a8aaf234b4f2bbe9fc9b39477a6e6eb"
+            dam:sha1="228501adf757a602c4a561de5ed5bf61734f76d6"
             dam:size="{Long}23367"
             dc:format="image/jpeg"
             dc:modified="{Date}2015-11-27T14:31:59.002+11:00"
@@ -51,7 +51,7 @@
             exif:SceneCaptureType="{Long}0"
             exif:Sharpness="{Long}0"
             exif:WhiteBalance="{Long}0"
-            jcr:lastModified="{Date}2015-11-27T15:24:07.377+11:00"
+            jcr:lastModified="{Date}2015-12-01T10:05:46.381+11:00"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
