@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <title jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <hideinnav
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideProperties="*"/>
+                                        </items>
+                                    </title>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <navigation
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Navigation"
+                        sling:orderBefore="advanced"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                        class="foundation-field-edit coral-Well">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <mainnav
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Main Navigation"
+                                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <hideinnav
+                                                        cq:showOnCreate="{Boolean}false"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                        allowBulkEdit="{Boolean}true"
+                                                        class="dialog-hide-navigation"
+                                                        cq-msm-lockable="hideInNav"
+                                                        name="./hideInNav"
+                                                        renderReadOnly="{Boolean}true"
+                                                        text="Hide in Main Navigation?"
+                                                        value="true"/>
+                                                </items>
+                                            </mainnav>
+                                            <morenav
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="More Section"
+                                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                class="dialog-more-navigation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <more
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                        name="./moreSection"
+                                                        text="Show in more Section?"
+                                                        value="true"/>
+                                                    <numberchildren
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="Max number of children"
+                                                        name="./maxnav"/>
+                                                </items>
+                                            </morenav>
+                                            <boxnav
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Box Menu"
+                                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                class="dialog-box-navigation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <box
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                        name="./box"
+                                                        renderReadOnly="{Boolean}true"
+                                                        text="Navigation should be a box?"
+                                                        value="true"/>
+                                                    <color
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/colorpicker"
+                                                        fieldLabel="Pick a color"
+                                                        name="./textColor"/>
+                                                </items>
+                                            </boxnav>
+                                        </items>
+                                    </fieldset>
+                                </items>
+                            </column>
+                        </items>
+                    </navigation>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

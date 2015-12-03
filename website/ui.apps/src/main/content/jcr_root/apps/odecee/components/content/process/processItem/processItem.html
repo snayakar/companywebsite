@@ -2,6 +2,8 @@
      data-sly-use.emptyRenderer="emptysection.html"
      data-sly-call="${emptyRenderer.emptySectionTemplate @ processItem=processItem}" />
 
+<div  data-sly-test="${processItem.hasImage}"
+      data-sly-resource="${'image' @ resourceType='wcm/foundation/components/image', wcmmode='disabled'}"></div>
 <div class="arcContain">
     <div class="archide archideLeft anmt1 anmt2">
         <div class="arc"></div>
@@ -13,6 +15,6 @@
 <a href="${processItem.buttonLink}"> <h3 style="opacity: 1;">${processItem.buttonLabel}</h3></a>
 <p class="pv" style="opacity: 1;">${processItem.heading}</p>
 
-<ul class="points wow animated hvr" style="visibility: visible; opacity: 0.2;">
-    ${processItem.text}
+<ul class="points wow animated hvr" style="visibility: visible; opacity: 0.2;" data-sly-unwrap="${processItem.context == processItem.CONST.CONTEXT_HTML}">
+    ${processItem.text @ context=processItem.CONST.CONTEXT_HTML}
 </ul>
