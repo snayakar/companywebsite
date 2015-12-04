@@ -24,7 +24,7 @@
                     </sly>
                     <li class="more_link"><a href="#" data-reveal-id="myModal" data-options="animation:'fadeAndPop'">More</a></li>
                     <sly data-sly-list.menu="${navbar.items}">
-                        <li class="proj_btn" data-sly-test="${menu.properties['boxNav']}"><a href="${menu.url @ context='uri'}">${menu.page.title}</a></li>
+                        <li class="proj_btn" data-sly-test="${menu.properties['boxNav']}"><a href="${menu.url @ context='uri'}" style="color: ${menu.properties['boxNavColor'] @ context='styleToken'} !important; border: 2px solid ${menu.properties['boxNavColor'] @ context='styleToken'} !important;">${menu.page.title}</a></li>
                     </sly>
                 </ul>
             </section>
@@ -51,19 +51,15 @@
 
     <div id="myModal" class="pop-menu reveal-modal row wow animated" data-reveal="" style="visibility: visible;">
         <div class="clearfix padt">
-            <div class="link_col1 column large-3">
-                <ul>
-                    <li><a href="http://odecee.com.au/what-we-do"><h6>WHAT WE DO</h6></a></li>
-                    <li><a href="http://odecee.com.au/what-we-do/enterprise-digital">Enterprise Digital</a></li>
-                    <li><a href="http://odecee.com.au/what-we-do/enterprise-devops">Enterprise DevOps</a></li>
-                </ul>
-                <ul>
-                    <li><a href="http://odecee.com.au/our-work"><h6>OUR WORK</h6></a></li>
-                    <li><a href="http://odecee.com.au/our-work/anz-cash-management">ANZ Cash Management</a></li>
-                    <li><a href="http://odecee.com.au/our-work/australia-post-parcel-send">Australia Post Parcel Send</a></li>
-                    <li><a href="http://odecee.com.au/our-work/nbnco-national-devops-rollout/">NBN Co</a></li>
+            <div class="link_col1 column large-3" data-sly-list.menu="${navbar.items}">
+                <ul data-sly-test="${menu.properties['moreSection']}">
+                    <li><a href="${menu.url @ context='uri'}"><h6 style="text-transform: uppercase;">${menu.page.title}</h6></a></li>
+                    <sly data-sly-list.subChannel="${menu.subChannels}">
+                        <li><a href="${subChannel.url @ context='uri'}">${subChannel.page.title}</a></li>
+                    </sly>
                 </ul>
             </div>
+            <!--
             <div class="link_col2 column large-3">
                 <ul>
                     <li><a href="http://odecee.com.au/who-we-are"><h6>WHO WE ARE</h6></a></li>
@@ -87,38 +83,11 @@
                     <li><a href="http://odecee.com.au/aus-app-design-awards-for-odecee-starlight/">AUS [app] Design Awards for Odecee &amp; Starlight!</a> </li>
                 </ul>
             </div>
+            -->
         </div>
 
         <div class="contact_pop clearfix">
-            <div class="cont_col1 column large-3">
-                <div class="col4">
-                    <div class="pad">
-                        <ul class="call">
-                            <li><i class="fa fa-mobile"></i> 1300 633 233</li>
-                            <li><i class="fa fa-envelope-o"></i> <a href="mailto:enquiries@odecee.com.au" style="color: #bababa;">enquiries@odecee.com.au</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="cont_col2 column large-3">
-                <div class="col4">
-                    <div class="pad">
-                        <ul class="addrs">
-                            <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/HpORP" style="color: #bababa;">Level 11, 410 Collins Street
-                                <br>Melbourne, Australia, 3000</a></li>
-                            <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/csNei" style="color: #bababa;">Level 5, 66 Clarence Street,
-                                <br>Sydney Australia, 2000</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="cont_col3 column large-5">
-                <div class="top_social clearfix">
-                    <a href="https://www.facebook.com/odeceesocial"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/fb-ico.png" alt=""></a>
-                    <a href="https://www.linkedin.com/company/320621?trk=tyah&amp;trkInfo=tarId%3A1406853179868%2Ctas%3AOdecee%2Cidx%3A2-1-4"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/in-ico.png" alt=""></a>
-                    <a href="https://twitter.com/Odecee"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/twt-ico.png" alt=""></a>
-                </div>
-            </div>
+            <div data-sly-resource="${'../footer_section/footer' @ resourceType='odecee/components/structure/footer', wcmmode='disabled'}"></div>
         </div>
 
 

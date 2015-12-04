@@ -26,4 +26,7 @@
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"/>
     </jcr:content>
+    <anzcashmanagement/>
+    <auspostparcelsend/>
+    <nbnco/>
 </jcr:root>

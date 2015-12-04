@@ -7,7 +7,7 @@
     <jcr:content
         cq:name="odeceeteam2-325x1961-288x196.jpg"
         cq:parentPath="/content/dam/odecee/images"
-        jcr:lastModified="{Date}2015-12-01T10:05:46.687+11:00"
+        jcr:lastModified="{Date}2015-12-04T11:09:26.479+11:00"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -26,7 +26,7 @@
             dam:Progressive="no"
             dam:sha1="7cbcd12a97b49c0a63df94d4d8040759aba8cba6"
             dam:size="{Long}38206"
-            dc:creator="[Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa]"
+            dc:creator="[Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa,Picasa]"
             dc:format="image/jpeg"
             dc:modified="{Date}2015-11-27T14:31:58.217+11:00"
             dc:rights="DAVID NG          DNGPHOTOGRAPHY"
@@ -34,7 +34,7 @@
             exif:ExifImageWidth="{Long}288"
             exif:PixelXDimension="{Long}72"
             exif:PixelYDimension="{Long}72"
-            jcr:lastModified="{Date}2015-12-01T10:05:46.570+11:00"
+            jcr:lastModified="{Date}2015-12-04T11:09:25.919+11:00"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"

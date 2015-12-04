@@ -26,4 +26,6 @@
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"/>
     </jcr:content>
+    <enterprisedigital/>
+    <enterprisedevops/>
 </jcr:root>

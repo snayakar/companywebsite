@@ -6132,13 +6132,13 @@ li.name h1 .logo-white {
 }
 
 .header.trns-head .top-bar-section li:not(.has-form).proj_btn a:not(.button) {
-    color: #8AFF86 !important;
-    border: 2px solid #8AFF86 !important
+    /*color: #8AFF86 !important;
+    border: 2px solid #8AFF86 !important*/
 }
 
 .header.trns-head .top-bar-section li:not(.has-form).proj_btn.top_career a:not(.button) {
-    color: white !important;
-    border: 2px solid white !important
+    /*color: white !important;
+    border: 2px solid white !important*/
 }
 
 .btn.get_touch {
@@ -7150,7 +7150,7 @@ html[xmlns] .file-upload-wrapper {
 .footer {
     background: white;
     text-align: center;
-    position: relative;
+   /* position: relative;*/
     z-index: 40
 }
 
