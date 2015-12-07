@@ -3,7 +3,7 @@
     jcr:isCheckedOut="{Boolean}true"
     jcr:mixinTypes="[mix:versionable]"
     jcr:primaryType="dam:Asset"
-    jcr:uuid="da061cd9-cb9f-4489-874d-487467590772">
+    jcr:uuid="b0a31d8d-178a-4c12-8056-ee14bc22eda4">
     <jcr:content
         cq:name="asset.jpg"
         cq:parentPath="/content/dam/odecee/images"

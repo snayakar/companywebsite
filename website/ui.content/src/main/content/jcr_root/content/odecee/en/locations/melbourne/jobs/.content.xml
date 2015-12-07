@@ -9,14 +9,14 @@
         jcr:title="Jobs"
         sling:resourceType="odecee/components/structure/page"
         pageTitle="Jobs">
-        <navbar
+        <nav_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/navbar"/>
-        <main
+            sling:resourceType="wcm/foundation/components/iparsys"/>
+        <main_section
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys"/>
-        <footer
+        <footer_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="odecee/components/structure/footer"/>
+            sling:resourceType="wcm/foundation/components/iparsys"/>
     </jcr:content>
 </jcr:root>

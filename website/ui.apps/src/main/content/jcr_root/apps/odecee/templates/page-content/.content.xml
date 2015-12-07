@@ -3,19 +3,22 @@
     jcr:description="Template with focus on content."
     jcr:primaryType="cq:Template"
     jcr:title="odecee Content Page"
+    sling:resourceType="odecee/components/structure/page"
     allowedPaths="[/content/odecee/.+]"
     ranking="{Long}100">
     <jcr:content
             jcr:primaryType="cq:PageContent"
             sling:resourceType="odecee/components/structure/page">
-        <navbar
+        <nav_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="odecee/components/structure/navbar"/>
-        <main
+                sling:resourceType="wcm/foundation/components/iparsys">
+        </nav_section>
+        <main_section
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"/>
-        <footer
+        <footer_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="odecee/components/structure/footer"/>
+                sling:resourceType="wcm/foundation/components/iparsys">
+        </footer_section>
     </jcr:content>
 </jcr:root>

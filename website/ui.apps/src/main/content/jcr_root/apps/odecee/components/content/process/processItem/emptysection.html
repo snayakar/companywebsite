@@ -1,4 +1,4 @@
 <template data-sly-template.emptySectionTemplate="${@ processItem}">
-    <img data-sly-test="${!(processItem.textContent || processItem.imageContent) && processItem.isTouch}" src="/etc/designs/default/0.gif" data-emptytext="Create a Process" class="cq-placeholder file cq-dd-image"/>
-    <img data-sly-test="${!(processItem.textContent || processItem.imageContent) && !processItem.isTouch}" src="/etc/designs/default/0.gif" class="cq-image-placeholder cq-dd-image"/>
+    <img data-sly-test="${!(processItem.text || processItem.imageContent) && processItem.isTouch}" src="/etc/designs/default/0.gif" data-emptytext="Create a Process" class="cq-placeholder file cq-dd-image"/>
+    <img data-sly-test="${!(processItem.text || processItem.imageContent) && !processItem.isTouch}" src="/etc/designs/default/0.gif" class="cq-image-placeholder cq-dd-image"/>
 </template>

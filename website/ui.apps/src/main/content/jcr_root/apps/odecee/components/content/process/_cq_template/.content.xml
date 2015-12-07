@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Template">
+    <item1 jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/content/process/processItem"/>
+    <item2 jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/content/process/processItem"/>
+    <item3 jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/content/process/processItem"/>
+    <item4 jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/content/process/processItem"/>
+    <item5 jcr:primaryType="nt:unstructured"
+            sling:resourceType="odecee/components/content/process/processItem"/>
+</jcr:root>

@@ -17,25 +17,25 @@
                     <a href="#"><span>Menu</span></a>
                 </li>
             </ul>
-
             <section class="top-bar-section right">
-                <ul id="menu-main-menu-1" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://odecee.com.au/what-we-do/">What we do</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2507"><a href="http://odecee.com.au/our-work/">Our Work</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2508"><a href="http://odecee.com.au/sprout-innovation-event/">Innovation</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://odecee.com.au/who-we-are/">Who we are</a></li>
-                    <li class="more_link menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="http://#" data-reveal-id="myModal" data-options="animation:'fadeAndPop'">More</a></li>
-                    <li class="proj_btn top_career menu-item menu-item-type-post_type menu-item-object-page menu-item-1950"><a href="http://odecee.com.au/careers/">JOIN OUR TEAM</a></li>
-                    <li class="proj_btn menu-item menu-item-type-post_type menu-item-object-page menu-item-2958"><a href="http://odecee.com.au/contact-us/">Contact Us</a></li>
-                </ul>			</section></nav>
+                <ul id="menu-main-menu-1" >
+                    <sly data-sly-list.menu="${navbar.items}">
+                        <li data-sly-test="${!menu.properties['hideInMainNav'] && !menu.properties['boxNav']}"><a href="${menu.url @ context='uri'}">${menu.page.title}</a></li>
+                    </sly>
+                    <li class="more_link"><a href="#" data-reveal-id="myModal" data-options="animation:'fadeAndPop'">More</a></li>
+                    <sly data-sly-list.menu="${navbar.items}">
+                        <li class="proj_btn" data-sly-test="${menu.properties['boxNav']}"><a href="${menu.url @ context='uri'}" style="color: ${menu.properties['boxNavColor'] @ context='styleToken'} !important; border: 2px solid ${menu.properties['boxNavColor'] @ context='styleToken'} !important;">${menu.page.title}</a></li>
+                    </sly>
+                </ul>
+            </section>
+        </nav>
     </div>
 
     <div class="large-12 columns show-for-medium-down">
         <div class="contain-to-grid">
             <nav class="tab-bar">
                 <section class="middle tab-bar-section">
-                    <h1 class="title"><a href="http://odecee.com.au" rel="nofollow" style="border:none;"> <img src="http://odecee.com.au/wp-content/themes/odecee/library/images/logo.svg"></a>
-
-                    </h1>
+                    <h1 class="title"><a href="http://odecee.com.au" rel="nofollow" style="border:none;"> <img src="http://odecee.com.au/wp-content/themes/odecee/library/images/logo.svg"></a></h1>
                 </section>
                 <section class="right-small ">
                     <a class="menu-icon right-off-canvas-toggle"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/menu-ico.png" alt="" style="margin-right:10px;"></a>
@@ -51,19 +51,15 @@
 
     <div id="myModal" class="pop-menu reveal-modal row wow animated" data-reveal="" style="visibility: visible;">
         <div class="clearfix padt">
-            <div class="link_col1 column large-3">
-                <ul>
-                    <li><a href="http://odecee.com.au/what-we-do"><h6>WHAT WE DO</h6></a></li>
-                    <li><a href="http://odecee.com.au/what-we-do/enterprise-digital">Enterprise Digital</a></li>
-                    <li><a href="http://odecee.com.au/what-we-do/enterprise-devops">Enterprise DevOps</a></li>
-                </ul>
-                <ul>
-                    <li><a href="http://odecee.com.au/our-work"><h6>OUR WORK</h6></a></li>
-                    <li><a href="http://odecee.com.au/our-work/anz-cash-management">ANZ Cash Management</a></li>
-                    <li><a href="http://odecee.com.au/our-work/australia-post-parcel-send">Australia Post Parcel Send</a></li>
-                    <li><a href="http://odecee.com.au/our-work/nbnco-national-devops-rollout/">NBN Co</a></li>
+            <div class="link_col1 column large-3" data-sly-list.menu="${navbar.items}">
+                <ul data-sly-test="${menu.properties['moreSection']}">
+                    <li><a href="${menu.url @ context='uri'}"><h6 style="text-transform: uppercase;">${menu.page.title}</h6></a></li>
+                    <sly data-sly-list.subChannel="${menu.subChannels}">
+                        <li><a href="${subChannel.url @ context='uri'}">${subChannel.page.title}</a></li>
+                    </sly>
                 </ul>
             </div>
+            <!--
             <div class="link_col2 column large-3">
                 <ul>
                     <li><a href="http://odecee.com.au/who-we-are"><h6>WHO WE ARE</h6></a></li>
@@ -71,71 +67,27 @@
                     <li><a href="http://odecee.com.au/career" style="text-transform: none;">Work With Us - Being  od</a></li>
                 </ul>
                 <ul>
-
-
-
                     <li><a href="http://odecee.com.au/career"><h6>OPPORTUNITIES</h6></a></li>
-
-
-                    <li>
-                        <a href="http://odecee.com.au/jobs/sydney/senior-devops-engineer-2/">Senior DevOps Engineer</a>
-                    </li>
-
-
-                    <li>
-                        <a href="http://odecee.com.au/jobs/sydney/senior-lead-mobile-engineer/">Senior / Lead Mobile Engineer</a>
-                    </li>
-
-
-                    <li>
-                        <a href="http://odecee.com.au/jobs/sydney/lead-devops-engineer/">Lead DevOps Engineer</a>
-                    </li>
-
-
+                    <li><a href="http://odecee.com.au/jobs/sydney/senior-devops-engineer-2/">Senior DevOps Engineer</a></li>
+                    <li><a href="http://odecee.com.au/jobs/sydney/senior-lead-mobile-engineer/">Senior / Lead Mobile Engineer</a></li>
+                    <li><a href="http://odecee.com.au/jobs/sydney/lead-devops-engineer/">Lead DevOps Engineer</a></li>
                 </ul>
             </div>
             <div class="link_col2 column large-5">
                 <ul>
                     <li><a href="http://odecee.com.au/expert-thinking/"><h6>EXPERT THINKING</h6></a></li>
-
-                    <li><a href="http://odecee.com.au/behind-the-curtain-the-big-debate-showdown-speak-up-speak-out/">Behind the curtain: The Big Debate Showdown – Speak Up, Speak Out</a> </li> <li><a href="http://odecee.com.au/a-recipe-for-a-great-omni-channel-experience/">A recipe for a great Omni-channel experience</a> </li> <li><a href="http://odecee.com.au/things-ive-learned-about-content-working-as-a-content-technologist/">Things I’ve learned about content working as a content technologist</a> </li> <li><a href="http://odecee.com.au/odecee-innovation-event-sprout-the-verdict/">Odecee innovation event Sprout – the verdict</a> </li> <li><a href="http://odecee.com.au/aus-app-design-awards-for-odecee-starlight/">AUS [app] Design Awards for Odecee &amp; Starlight!</a> </li>
-
+                    <li><a href="http://odecee.com.au/behind-the-curtain-the-big-debate-showdown-speak-up-speak-out/">Behind the curtain: The Big Debate Showdown – Speak Up, Speak Out</a></li>
+                    <li><a href="http://odecee.com.au/a-recipe-for-a-great-omni-channel-experience/">A recipe for a great Omni-channel experience</a> </li>
+                    <li><a href="http://odecee.com.au/things-ive-learned-about-content-working-as-a-content-technologist/">Things I’ve learned about content working as a content technologist</a> </li>
+                    <li><a href="http://odecee.com.au/odecee-innovation-event-sprout-the-verdict/">Odecee innovation event Sprout – the verdict</a> </li>
+                    <li><a href="http://odecee.com.au/aus-app-design-awards-for-odecee-starlight/">AUS [app] Design Awards for Odecee &amp; Starlight!</a> </li>
                 </ul>
-
             </div>
-
+            -->
         </div>
 
         <div class="contact_pop clearfix">
-            <div class="cont_col1 column large-3">
-                <div class="col4">
-                    <div class="pad">
-                        <ul class="call">
-                            <li><i class="fa fa-mobile"></i> 1300 633 233</li>
-                            <li><i class="fa fa-envelope-o"></i> <a href="mailto:enquiries@odecee.com.au" style="color: #bababa;">enquiries@odecee.com.au</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="cont_col2 column large-3">
-                <div class="col4">
-                    <div class="pad">
-                        <ul class="addrs">
-                            <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/HpORP" style="color: #bababa;">Level 11, 410 Collins Street
-                                <br>Melbourne, Australia, 3000</a></li>
-                            <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/csNei" style="color: #bababa;">Level 5, 66 Clarence Street,
-                                <br>Sydney Australia, 2000</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="cont_col3 column large-5">
-                <div class="top_social clearfix">
-                    <a href="https://www.facebook.com/odeceesocial"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/fb-ico.png" alt=""></a>
-                    <a href="https://www.linkedin.com/company/320621?trk=tyah&amp;trkInfo=tarId%3A1406853179868%2Ctas%3AOdecee%2Cidx%3A2-1-4"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/in-ico.png" alt=""></a>
-                    <a href="https://twitter.com/Odecee"><img src="http://odecee.com.au/wp-content/themes/odecee/library/images/twt-ico.png" alt=""></a>
-                </div>
-            </div>
+            <div data-sly-resource="${'../footer_section/footer' @ resourceType='odecee/components/structure/footer', wcmmode='disabled'}"></div>
         </div>
 
 
