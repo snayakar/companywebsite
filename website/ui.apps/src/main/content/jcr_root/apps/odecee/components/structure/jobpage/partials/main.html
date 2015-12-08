@@ -25,7 +25,7 @@
 			<div class="main-wrap">
 				<sly data-sly-use.job="com.odecee.core.models.JobModel"/>
 				<div class="${job.city} clearfix">
-					<section class="job_hero_banner" style="background-image:url('${job.locationImage @ context='uri'}')">
+					<section class="job_hero_banner" style="background-image:url('${job.locationProperties['image'] @ context='uri'}')">
 						<div class="ovly"></div>
 						<div class="banner-text wow fadeInDown animated"
 							data-wow-duration="0.35s" data-wow-delay="0.8s"
@@ -47,7 +47,7 @@
 
 
 								<p></p>
-								<div data-sly-resource="${ @path='jobOverview', resourceType='/apps/odecee/components/content/text'}"></div>
+								<div data-sly-resource="${ @path='joboverview', resourceType='/apps/odecee/components/content/text'}"></div>
 								<p></p>
 
 
@@ -61,7 +61,7 @@
 
 
 								<p></p>
-								<div data-sly-resource="${ @path='jobDescription', resourceType='/apps/odecee/components/content/text'}"></div>
+								<div data-sly-resource="${ @path='jobdescription', resourceType='/apps/odecee/components/content/text'}"></div>
 								<p></p>
 
 
@@ -301,27 +301,23 @@
 								data-wow-duration="0.35s" data-wow-delay="0.4s"
 								style="visibility: hidden; animation-duration: 0.35s; animation-delay: 0.4s; animation-name: none;">
 
-								<h2 class="text-center">Other Opportunities in Sydney</h2>
-								<div class="posit-row column large-6 small-10 large-centered">
-									<a
-										href="http://odecee.com.au/jobs/sydney/senior-devops-engineer-2/">
-										<h6 style="text-transform: uppercase;">Senior DevOps
-											Engineer</h6>
-									</a>
-									<p>In this critical role, you’re the WOW factor behind the
-										delivery of awesome solutions for some of Australia’s largest
-										enterprises and most challenging projects.</p>
-								</div>
-								<div class="posit-row column large-6 small-10 large-centered">
-									<a
-										href="http://odecee.com.au/jobs/sydney/senior-lead-mobile-engineer/">
-										<h6 style="text-transform: uppercase;">Senior / Lead
-											Mobile Engineer</h6>
-									</a>
-									<p>Consult and act as subject matter expert in the
-										development of market leading and engaging native mobile
-										applications for Tier 1 and 2 clients.</p>
-								</div>
+								<h2 class="text-center">Other Opportunities in ${job.locationProperties['town']}</h2>
+								<sly data-sly-test.hasOtherJobs="${job.relatedJobs}">
+									<sly data-sly-list.relatedJob="${job.relatedJobs}">
+										<div class="posit-row column large-6 small-10 large-centered">
+											<a
+												href="${relatedJob.path}">
+												<h6 style="text-transform: uppercase;">${relatedJob.title}</h6>
+											</a>
+											<p>${relatedJob.description}</p>
+										</div>
+									</sly>
+								</sly>
+								<sly data-sly-test=${!hasOtherJobs}>
+									<div class="posit-row column large-6 small-10 large-centered">
+										<p>No other jobs in ${job.locationProperties['town']} are available at the moment</p>
+									</div>
+								</sly>
 							</div>
 						</div>
 					</section>
