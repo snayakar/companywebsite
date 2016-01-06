@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/odecee" mode="merge">
+        <exclude pattern="/apps/odecee/install" />
+    </filter>
+    <filter root="/home/users/system/3k7zETBVf8CBFGWRG1K2"/>
+</workspaceFilter>
