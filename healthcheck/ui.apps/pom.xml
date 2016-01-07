@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.odecee</groupId>
         <artifactId>healthcheck</artifactId>
-        <version>1.4-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -198,7 +198,7 @@
         <dependency>
             <groupId>com.odecee</groupId>
             <artifactId>healthcheck.core</artifactId>
-            <version>1.4-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
 
         <dependency>
