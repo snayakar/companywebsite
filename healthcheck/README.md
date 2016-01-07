@@ -1,54 +1,74 @@
-# Sample AEM project template
+#AEM HealthCheck#
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+As AEM doesn't come with an ELB\-compatible health check service OOTB Odecee has built one that will be used by the AEM Accelerator\.
 
-## Modules
+###Background###
 
-The main parts of the template are:
+AEM starting with version 6\.1 comes with a number of JMX based health checks that allow for administrators to monitor the system\. There are convenient views built on top of these services that are available via the administrative console of AEM ([http://localhost:4502/libs/granite/operations/content/healthreports\.html](http://localhost:4502/libs/granite/operations/content/healthreports\.html) \- replace localhost with URL/IP of instance)\. The problem with these tools is that they are not suitable for continuous monitoring or in a situation where auto\-healing is required due to the fact that they are not:
 
-* core: Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
-* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
-* ui.content: contains sample content using the components from the ui.apps
-* ui.tests: Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production.
-* ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
++ Resolvable via a public non\-password protected URL
 
-## How to build
++ The JMX services are not accessible via HTTP
 
-To build all the modules run in the project root directory the following command with Maven 3:
++ They are not accessible via the HEAD HTTP method
 
-    mvn clean install
+In order to resolve this issue and provide an efficient monitoring tool for automated, continuous monitoring of the AEM instances as part of AEM accelerator we are providing a custom wrapper over a set of predefined JMX services that is serving HTTP HEAD requests (as well as HTTP GET)\.
 
-If you have a running AEM instance you can build and package the whole project and deploy into AEM with  
+The code is maintained as part of the odecee\-aem repository here: [https://stash\.odecee\.com\.au/projects/AEM/repos/odecee/browse](https://stash\.odecee\.com\.au/projects/AEM/repos/odecee/browse)
 
-    mvn clean install -PautoInstallPackage
-    
-Or to deploy it to a publish instance, run
+###Accessing the health check service###
 
-    mvn clean install -PautoInstallPackagePublish
-    
-Or to deploy only the bundle to the author, run
+**The health check should be accessed directly via the AEM instance and NOT via a dispatcher\. Accessing the health check via a dispatcher does not guarantee that you will independently check a single instance\.**
 
-    mvn clean install -PautoInstallBundle
+**
+**The health check service can be access at the following url "/bin/system/healthcheck"\. No additional parameters or attributes are required\.
 
-## Testing
+####Accessing via a HTTP HEAD request####
 
-There are three levels of testing contained in the project:
+When issuing a HEAD request the response will be a body\-less response with either an HTTP\.OK (200) or HTTP\.BAD\_REQUEST (400) status
 
-* unit test in core: this show-cases classic unit testing of the code contained in the bundle. To test, execute:
+####Accessing via a HTTP GET request####
 
-    mvn clean test
+When issuing a GET request the response will be a response with a status info per MBean with either an HTTP\.OK (200) or HTTP\.BAD\_REQUEST (400) status\.
 
-* server-side integration tests: this allows to run unit-like tests in the AEM-environment, ie on the AEM server. To test, execute:
+###Before you begin###
 
-    mvn clean integration-test -PintegrationTests
+There are a few AEM specific solution design requirements that are important to understand as part of the health check implementation\.
 
-* client-side Hobbes.js tests: JavaScript-based browser-side tests that verify browser-side behavior. To test:
+####Administrative user provisioning####
 
-    in the browser, open the page in 'Developer mode', open the left panel and switch to the 'Tests' tab and find the generated 'MyName Tests' and run them.
+As part of the security design changes in AEM 6 and further in AEM 6\.1 it is no longer possible to use a blanket administrative login to the JCR repository to access secure information\. An example implementation that reflects this pattern can be found here: [http://www\.wemblog\.com/2014/08/how\-to\-use\-sessions\-and\-resource\.html](http://www\.wemblog\.com/2014/08/how\-to\-use\-sessions\-and\-resource\.html) and the official documentation is located here: [http://sling\.apache\.org/documentation/the\-sling\-engine/service\-authentication\.html](http://sling\.apache\.org/documentation/the\-sling\-engine/service\-authentication\.html)
 
+Currently AEM does not offer a system user that has access to read the MBean information for the healthcheck JMX services\. As such a new system user has to be created and configured to access this information\. This user is provided as part of the health check codebase\.
 
-## Maven settings
+As these users are not intended to login to the AEM product they are not allowed to have a password set (which prevents them from authenticating) and are only meant to be used in the context of obtaining a Session to the JCR\.
 
-The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
+####Discrepancy between Author and Publish instances####
 
-    http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+One of the MBeans that we base the health check report on, the request report gives out false negatives on an Author instance as the response times on Author instances are generally much slower than publisher as they are often POST requests (rather then the typical GET requests on a Publisher)\. Due to this the health check overall status for an author instance ignores the reporting from this service\.
+
+###Installation###
+
+The health check service is provided as an installable package via S3\. The package must be installed as part of the AEM AMI fabrication process\. There is no configuration required to complete the installation\.
+
+###Updates to the implementation###
+
+To update the code of the health check service:
+
+1. Checkout the code base: [https://stash.odecee.com.au/projects/AEM/repos/odecee/browse/healthcheck](https://stash.odecee.com.au/projects/AEM/repos/odecee/browse/healthcheck)
+
+2. Make the necessary changes
+
+3. Commit the changes and create a pull request
+
+4. Once the changes are merged tag a release
+
+5. Build a package
+
+6. Deploy to S3
+
+**TODO**: Automate the deploy to S3 using Bamboo\.
+
+ 
+
+ 
