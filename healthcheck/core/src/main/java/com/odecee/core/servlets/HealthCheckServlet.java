@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletResponse;
@@ -20,6 +21,7 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.api.resource.ValueMap;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
+import org.apache.sling.settings.SlingSettingsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,6 +44,9 @@ public class HealthCheckServlet extends SlingSafeMethodsServlet {
 
 	@Reference
 	private ResourceResolverFactory resolverFactory;
+	
+	@Reference
+    private SlingSettingsService slingSettingsService;
 
 	private Resource bundlesMBeanResource = null;
 	private Resource replicationQueuesMBeanResource = null;
@@ -99,6 +104,9 @@ public class HealthCheckServlet extends SlingSafeMethodsServlet {
 	}
 
 	private StringBuilder processResponse(SlingHttpServletResponse response) {
+		
+		Set<String> runModes = slingSettingsService.getRunModes();
+		
 		//Bundles
 		Boolean okBundles = getMBeanAttributeResponse("mbean:attributes/ok", bundlesMBeanResource, Boolean.FALSE);
 
@@ -126,8 +134,8 @@ public class HealthCheckServlet extends SlingSafeMethodsServlet {
 			replicationQueue = "<br/>Some queues were <b>Blocked</b>. Please contact adminsitrator!!";
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 		}
-
-		if(!okRequests && !("WARN".equals(requestResourceStatus))) {
+		
+		if(!okRequests && !("WARN".equals(requestResourceStatus)) && !runModes.contains("author")) {
 			requestStatus = "<br/>There were errors while serving requests from this instance. Please contact adminsitrator!!";
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 		}
