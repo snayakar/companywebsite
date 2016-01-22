@@ -16,7 +16,7 @@
 <div class="off-canvas-wrap" data-sly-use.main="main.js">
 	<header class="header clearfix trns-head" role="banner">
 		<!-- TODO: wrap the navbar to a proper wrapper later -->
-		<sly data-sly-resource="navbar"></sly>
+		<sly data-sly-resource="nav_section" data-sly-unwrap></sly>
 	</header>
 	<a class="exit-off-canvas"></a>
 
@@ -324,8 +324,8 @@
 
 				</div>
 				<footer class="footer" role="contentinfo">
-					<section class="foot" data-sly-resource="footer"></section>
-				</footer>
+			        <section class="foot" data-sly-resource="footer_section" data-sly-unwrap></section>
+			    </footer>
 			</div>
 		</div>
 	</div>
