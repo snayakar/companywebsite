@@ -15,5 +15,14 @@
 */-->
 <div data-sly-use.main="main.js">
 
-    <div class="page__par" data-sly-resource="main"></div>
+    <header class="header clearfix trns-head" role="banner">
+        <!-- TODO: wrap the navbar to a proper wrapper later -->
+        <sly data-sly-resource="nav_section" data-sly-unwrap></sly>
+    </header>
+
+    <div class="page__par" data-sly-resource="main_section"></div>
+
+    <footer class="footer" role="contentinfo">
+        <section class="foot" data-sly-resource="footer_section" data-sly-unwrap></section>
+    </footer>
 </div>

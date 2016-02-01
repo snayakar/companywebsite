@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:SystemUser"
+    jcr:uuid="52d38872-fb2f-3795-a673-fbed87c87ba0"
+    rep:authorizableId="webservice-healthcheck-user"
+    rep:principalName="webservice-healthcheck-user"
+    familyName="Admin"
+    givenName="Health Check">
+    <profile
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="cq/security/components/profile"/>
+</jcr:root>

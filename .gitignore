@@ -20,3 +20,14 @@ website/ui.apps/.settings/org.eclipse.m2e.core.prefs
 website/ui.content/.settings/org.eclipse.core.resources.prefs
 website/ui.content/.settings/org.eclipse.jdt.core.prefs
 website/ui.content/.settings/org.eclipse.m2e.core.prefs
+healthcheck/pom.xml.versionsBackup
+healthcheck/.settings/org.eclipse.m2e.core.prefs
+healthcheck/core/pom.xml.versionsBackup
+healthcheck/core/.settings/org.eclipse.core.resources.prefs
+healthcheck/core/.settings/org.eclipse.jdt.core.prefs
+healthcheck/core/.settings/org.eclipse.m2e.core.prefs
+healthcheck/core/.settings/org.eclipse.pde.core.prefs
+healthcheck/ui.apps/pom.xml.versionsBackup
+healthcheck/ui.apps/.settings/org.eclipse.core.resources.prefs
+healthcheck/ui.apps/.settings/org.eclipse.jdt.core.prefs
+healthcheck/ui.apps/.settings/org.eclipse.m2e.core.prefs
