@@ -14,13 +14,13 @@
         boxNavColor="rgba(255,255,255,1.00)">
         <nav_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/iparsys"/>
+            sling:resourceType="foundation/components/iparsys"/>
         <main_section
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys"/>
         <footer_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/iparsys"/>
+            sling:resourceType="foundation/components/iparsys"/>
         <image
             jcr:lastModified="{Date}2015-12-03T14:27:02.904+11:00"
             jcr:lastModifiedBy="admin"

@@ -10,7 +10,7 @@
         pageTitle="New Project">
         <nav_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/iparsys">
+            sling:resourceType="foundation/components/iparsys">
             <navbar
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="odecee/components/structure/navbar"/>
@@ -416,7 +416,7 @@
         </main_section>
         <footer_section
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/iparsys">
+            sling:resourceType="foundation/components/iparsys">
             <footer
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="odecee/components/structure/footer"

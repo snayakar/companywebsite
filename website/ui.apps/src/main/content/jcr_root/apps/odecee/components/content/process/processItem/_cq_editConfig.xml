@@ -49,6 +49,12 @@
                         features="*"/>
             </rtePlugins>
         </config>
+        <cq:listeners
+                jcr:primaryType="cq:EditListenersConfig"
+                afteredit="REFRESH_PARENT"
+                afterdelete="REFRESH_PARENT"
+                afterinsert="REFRESH_PARENT"
+                afterMove="REFRESH_PARENT"/>
     </cq:inplaceEditing>
     <cq:listeners
         jcr:primaryType="cq:EditListenersConfig"

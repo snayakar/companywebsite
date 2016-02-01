@@ -8,7 +8,7 @@
 		sling:resourceType="odecee/components/structure/jobpage">
 		<nav_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/iparsys">
+                sling:resourceType="foundation/components/iparsys">
         </nav_section>
 		<joboverview jcr:primaryType="nt:unstructured"
 			sling:resourceType="odecee/components/content/text" />
@@ -18,7 +18,7 @@
 			sling:resourceType="odecee/components/content/text" />
 		<footer_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/iparsys">
+                sling:resourceType="foundation/components/iparsys">
         </footer_section>
 	</jcr:content>
 </jcr:root>

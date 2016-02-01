@@ -10,14 +10,14 @@
             sling:resourceType="odecee/components/structure/page">
         <nav_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/iparsys">
+                sling:resourceType="foundation/components/iparsys">
         </nav_section>
         <main_section
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"/>
         <footer_section
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/iparsys">
+                sling:resourceType="foundation/components/iparsys">
         </footer_section>
     </jcr:content>
 </jcr:root>

@@ -107,6 +107,8 @@ public class ArticleModel {
 
             //fetch articles from content Path
             final Map<String, String> map = new HashMap<String, String>();
+
+            logger.info("this is the path" + contentPath);
             map.put("path", contentPath);
             map.put("type", "cq:Page");
 
