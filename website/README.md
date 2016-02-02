@@ -50,6 +50,12 @@ Odecee Home Page and global elements
 
 --------------------------
 
+
+DEPENDENCIES
+
+
+
+
 # Sample AEM project template
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
@@ -65,6 +71,17 @@ The main parts of the template are:
 * ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
 
 ## How to build
+
+
+!!! IMPORTANT !!! 
+
+First you need to install the hotfixes required to odecee project, the following command with Maven 3:
+
+    mvn clean install -PautoInstallHotfixes
+    
+Or to deploy it to a publish instance, run
+    
+   mvn clean install -PautoInstallHotfixesPublish
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
